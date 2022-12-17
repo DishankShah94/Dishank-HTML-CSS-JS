@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration page</title>
+</head>
+<body>
+    <h1 align="center">Registration Form</h1>
+    <form method="get">
+    <table align="center">
+        <tr>
+           
+               <td><label for="FirstName">First Name:</label></td>
+               <td><input type="text" autocomplete="off" name="FirstName" id="FirstName" required></td>
+            
+        </tr>
+       <tr>
+        
+            <td><label for="LastName">Last Name:</label></td>
+            <td><input type="text" autocomplete="off" name="LastName" id="LastName" required></td>
+       </tr>
+       <tr>
+       
+            <td><label for="UserName">User Name:</label></td>
+            <td><input type="text" autocomplate="off" name="UserName" id="UserName" required></td>
+       </tr>
+       <tr>
+        
+        <td><label for="password">Password:</label></td>
+        <td><input type="password" name="password" id="password" required></td>
+       </tr>
+       <tr>
+        
+        <td><label for="email">Email Id:</label></td>
+        <td><input type="email" name="email" id="email" autocomplate="off" required></td>
+       </tr>
+       <tr>
+        <td><label for="mobileno">Mobile No:</label></td>
+        <td><input type="tel" name="mobileno" id="mobileno" required></td>
+       </tr>            
+       <tr>
+       
+            <td><label for="city">City:</label></td> 
+            <td><select name="city" id="city">
+                <option value=""></option>
+                <option value="">Gandhinagar</option>
+                <option value="">Ahmedabad</option>
+                <option value="">Baroda</option>
+                <option value="">Surat</option>
+            </select>
+        </td>
+       </tr>    
+       <tr>
+        <td><label for="gender">Gender</label></td>
+        <td><input type="radio" name="gender" id="gender">Male
+        <input type="radio" name="gender" id="gender">Female</td>
+       </tr>
+       <tr>
+        <td><label for="">Hobbies</label> </td>
+        <td>
+            <input type="checkbox" name="Cricket" value="Cricket" id="Cricket"><label for="Cricket">Cricket</label>
+            <input type="checkbox" name="Music" value="Music" id="Music"><label for="Music">Music</label>
+            <input type="checkbox" name="Reading" value="Reading" id="Reading"><label for="Reading">Reading</label>
+            <input type="checkbox" name="Football" value="Football" id="Football"><label for="Football">Football</label>
+        </td>
+    </tr>   
+    <tr>
+        <td><input type="submit" name="submit" value="Register" id=""></td>
+        <td><p>Already Register?&nbsp;<a href="./login.html">Login</a></p></td>
+    </tr>  
+    </table>
+</form>
+
+</body>
+</html>
