@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Product</title>
+</head>
+<body>
+    <h1 align="center">Add Product</h1>
+    <form method="get" enctype="multipart/form-data">
+        <table align="center">
+            <tr>
+                <td><label for="productname">Product Name:</label><br><br></td>
+                <td><input type="text" name="productname" id="productname" placeholder="Product Name" autocomplete="off" required><br><br></td>
+            </tr>
+            <tr>
+                <td><label for="">Product Category:</label><br><br></td>
+                <td>
+                    <input type="text" name="productcategory" list="Product-Category" placeholder="Product Category" id="">
+                    <datalist id="Product-Category">
+                        <option value="Automotive and Transport">
+                        <option value="Business and Finance">
+                        <option value="Chemicals and Materials">
+                        <option value="Consumer Goods and Services">
+                        <option value="Clothing">
+                    </datalist>
+                <br><br></td>
+            </tr>
+            <tr>
+                <td><label for="imageofproduct">Image of Product:</label><br><br></td>
+                <td><input type="file" name="imageofproduct" id="imageofproduct" autocomplete="off"><br><br></td>
+            </tr>
+            <tr>
+                <td><label for="adescription">Addtional Desciption of Product:</label><br><br></td>
+                <td><textarea name="adescription" id="adescription" cols="30" rows="10" placeholder="Addtional Desciption of Product" autocomplete="off"></textarea><br><br></td>
+            </tr>
+            <tr>
+                <td><label for="productcolor">Product Color</label><br><br></td>
+                <td><input type="color" name="productcolor" id="productcolor"><br><br></td>
+            </tr>
+            <tr>
+                <td><label for="productmanufacturingdate">Product Manufacturing Date</label><br><br></td>
+                <td><input type="date" name="productmanufacturingdate" id=""><br><br></td>
+                
+            </tr>
+            <tr>
+                <td><label for="productmanufacturingmonth">Product Manufacturing Month</label><br><br></td>
+                <td><input type="month" name="productmanufacturingmonth" id=""><br><br></td>
+            </tr>
+            <tr>
+                <td><label for="productmanufacturingweek">Product Manufacturing Week</label><br><br></td>
+                <td><input type="week" name="productmanufacturingweek" id=""><br><br></td>
+            </tr>
+            <tr>
+                <td><label for="productDOB">Product DOB</label><br><br></td>
+                <td><input type="datetime-local" name="productDOB" id=""><br><br></td>
+            </tr>
+            <tr>
+                <td><label for="productsearch">Product Search</label><br><br></td>
+                <td><input type="search" name="productsearch" placeholder="Search" id="productsearch"><br><br></td>
+            </tr>
+            <tr>
+                <td><label for="productprice">Product Price:</label><br><br></td>
+                <td>
+                    <label for="">100</label><input type="range" name="productprice" id="productprice" placeholder="Product Price" ><label for="">1000</label>
+                <br><br></td>
+            </tr>
+            <tr>
+                <td><label for="producturl">Product Url</label><br><br></td>
+                <td><input type="url" name="producturl" placeholder="Product Url" id=""><br><br></td>
+            </tr>
+            <tr>
+                <td><label for="comments">Comments:</label><br><br></td>
+                <td><textarea name="comments" id="comments" cols="30" rows="10" placeholder="Comments" autocomplete="off" required></textarea><br><br></td>
+            </tr>
+            <tr>
+                <td align="center" colspan="2"><input type="submit" value="Submit" name="submit" id=""><br><br></td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
