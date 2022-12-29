@@ -1,0 +1,32 @@
+h1,h2,h3{
+    color: rgb(226, 147, 43);
+}
+#h1Second{
+    color:blue;
+}
+.h1Third{
+    color:chartreuse;
+}
+div p{
+    background-color: yellowgreen;
+}
+div#idh1 h4{
+    color: crimson;
+}
+div.idh4 h4{
+    color:chocolate;
+}
+.header-nav>p{
+    text-decoration: none;
+    background-color: red;
+    color: white;
+}
+h2+span{
+    background-color: aquamarine;
+}
+h2~span{
+    background-color: bisque;
+}
+h6,h4{
+    color:hotpink;
+}
