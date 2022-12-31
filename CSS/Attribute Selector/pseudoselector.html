@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Selector</title>
+    <style>
+        a{
+            color: orangered;
+        }
+        a:link{
+            color: rgb(177, 56, 11);
+        }
+        a:visited{
+            color: rgb(4, 48, 16);
+        }
+        a:active{
+            color: rgb(99, 9, 9);
+        }
+        input:focus{
+            outline: 2px solid rgb(6, 82, 92);
+            border-radius: 5px;
+        }
+        img:hover{
+            width: 250px;
+        }
+        .btn{
+            text-decoration: none;
+            background-color: rgb(40, 63, 146);
+            color: white !important;
+            padding: 5px 20px;
+        }
+        .btn:hover{
+            /* box-shadow: 5px 5px grey; */
+            box-shadow: 5px 5px 15px gray;
+        }
+        label{
+            text-decoration: underline;
+            color: blue;
+        }   
+    </style>
+</head>
+<body>
+    <label for="">Click me</label>
+    <a class="btn" href="#">Login</a>
+    <br>
+    <br>
+    <br>
+    <img src="../../images/paneer.jpg" width="200px" alt="">
+    <br>
+    <br>
+    <br>
+    <input type="text" name="" id="">
+    <a href="#">Click</a>
+    <a href="https://www.google.com">Click</a>
+
+</body>
+</html>
