@@ -1,0 +1,54 @@
+.txt-color{
+    color:red
+}
+.txt-alignment-center {
+    text-align: center;
+}
+
+.txt-alignment-end {
+    text-align: end;
+}
+
+.txt-alignment-start {
+    text-align: start;
+}
+
+.txt-alignment-justify {
+    text-align: justify;
+}
+
+.txt-alignment-left {
+    text-align: left;
+}
+
+.txt-alignment-right {
+    text-align: right;
+}
+.txt-decor-overline { text-decoration: overline; }
+.txt-decor-underline {text-decoration: underline;}
+.txt-decor-line-through {text-decoration: line-through;}
+
+div[class*="txt-alignment"] {
+width: 200px;
+box-shadow: 3px 3px 10px grey;
+margin: 10px;
+padding: 10px;
+text-decoration: 3px dotted red;
+}
+.txt-indent{    
+ text-indent: 200px; 
+ word-spacing: 1px; 
+ letter-spacing: 10px;  
+}
+.txt-decoration{
+    text-decoration: underline dotted red;
+}
+.txt-transform{
+    width: 200px;
+    box-shadow: 3px 3px 10px grey;
+    margin: 10px;
+    padding: 10px;
+    /* text-transform: capitalize; */
+    font-family: sans-serif;
+    text-transform:uppercase;
+}

@@ -1,0 +1,39 @@
+.changeFont{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+@font-face {
+    font-family: anything;
+    src: url(quicksand/Quicksand-Bold.otf);
+
+}
+.externalFont{
+    font-family: anything;
+    font-stretch: condensed;
+}
+.font-size-percent{font-size: 200%;}
+.font-size-em{font-size: 2em;}
+.font-size-rem{font-size: 2rem;}
+.font-size-px{font-size: 35px;}
+.font-size-ch{font-size: 2ch;}
+.font-size-cm{font-size: 2cm;}
+.font-size-ex{font-size: 4ex;}
+.font-size-fr{font-size: 10fr;}
+.font-size-in{font-size: 1in;}
+.font-size-mm{font-size: 10mm;}
+.font-size-pc{font-size: 10pc;}
+.font-size-pt{font-size: 30pt;}
+.font-size-vh{font-size: 5vh;}
+.font-size-vmax{font-size: 5vmax;}
+.font-size-vmin{font-size: 5vmin;}
+.font-size-vw{font-size: 2vw;}
+
+.font-style-italic{ font-style:italic }
+.font-style-normal{ font-style:normal }
+.font-style-oblique{ font-style:oblique }
+.font-variant-normal{ font-variant:normal }
+.font-variant-small-caps{ font-variant:all-small-caps }
+.font-bold{ font-weight:bold }
+.font-bolder{ font-weight:bolder }
+.font-lighter{ font-weight:lighter }
+.font-1000{ font-weight:1000 }
+.line-height{ line-height:50px }
