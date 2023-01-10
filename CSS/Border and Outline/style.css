@@ -1,0 +1,76 @@
+.border-example{
+    /* border: solid; */
+    /* border: dashed red; */
+    text-align: center;
+    /* border: thick double #32a1ce;  */
+    border: 10px solid green ;
+}
+.border-color{
+    text-align: center;
+    border: 10px solid;
+    padding: 10px;
+    /* border-color: red green; */
+    font-size: 16px;
+    color: blue;
+    /* border-color: red rgba(170, 50, 220, .6) green; */
+    border-color: red yellow green transparent;
+}
+div[class*="border-style"]{
+    padding: 20px;
+    margin: 15px;
+    border-width: 10px;
+    text-align: center;
+}
+.border-style-dashed{
+    border-style: dashed;
+}
+.border-style-dotted{
+    border-style: dotted;
+}
+.border-style-double{
+    border-style: double;
+}
+.border-style-groove{
+    border-style: groove;
+}
+.border-style-outset{
+    border-style: outset;
+}
+.border-style-ridge{
+    border-style: ridge;
+}
+.border-style-solid{
+    border-color: green;
+    border-style: solid;
+}
+.border-radius{
+    border-radius: 10px 30px 10px 30px; 
+    display: inline-block;
+    border: 5px solid teal;
+    
+    padding: 10px;  
+}
+.outline{
+    outline: 10px dotted red;
+    color: blue;    
+    /* text-align: center; */
+}
+.borvsout{
+    border: 10px dotted red;
+    /* outline: 10px dotted red; */
+    color: blue;   
+}
+a{
+    text-decoration: none;
+}
+.border-hover:hover{
+
+    border-top: 2px groove teal;
+    border-left: 2px groove teal;
+    border-right: 2px groove teal;
+    border-bottom: 2px groove teal;
+    
+}
+.outline-hover:hover{
+    outline: 2px groove teal;
+}
