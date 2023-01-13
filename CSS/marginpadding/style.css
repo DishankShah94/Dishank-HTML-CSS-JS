@@ -1,0 +1,38 @@
+div,p{
+    border: 1px solid;  
+    
+}
+.padding{
+    padding: 50px;
+ 
+}
+.margin{
+    margin: 100px;
+}
+.padding-sides{
+            
+    padding: 50px; /* 4side equal*/ 
+    padding: 50px 10px; /* 2sides equal XY*/
+    padding: 50px 10px 80px; /* 3sides top right bottom */
+    padding: 50px 10px 80px 120px; /* 4sides top right bottom left*/
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 10px;
+}
+#exmargin{
+    margin: 50px;
+    text-align: center;
+    margin-left: 100px;
+    margin-right: 200px;
+    margin-top: 50px;
+    /* margin-bottom: 50px; */
+}
+#expadding{
+    padding: 50px;
+    /* padding-left: 100px; */
+    text-align: center;
+    padding-right: 400px;
+    padding-bottom: 30px;
+    
+}
