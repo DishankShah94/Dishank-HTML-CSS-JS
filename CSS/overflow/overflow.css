@@ -1,0 +1,10 @@
+.box{
+    height: 200px;
+    width: 200px;
+    /* overflow: auto; */
+    /* overflow:hidden; */
+    overflow:auto;
+    /* overflow:visible; */
+    /* overflow-y: auto; */
+    /* overflow-wrap:break-word; */
+} 

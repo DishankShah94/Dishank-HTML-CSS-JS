@@ -1,0 +1,22 @@
+*{
+    font-family: sans-serif;
+}
+table{
+    border-collapse: collapse;
+    width: 90%;
+    height: 90vh;
+    margin: auto;
+   
+}
+thead{
+    background: linear-gradient(0deg,#6d7ae0 99%,#828ee4 1%);
+    color: white;
+}
+table,th,td{
+    border: 1px solid;
+    padding: 10px;
+    text-align: left;
+}
+tr:nth-child(even){
+    background-color: #2c315b77;
+}
