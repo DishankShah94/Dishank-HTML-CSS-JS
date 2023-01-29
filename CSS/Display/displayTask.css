@@ -1,0 +1,176 @@
+*{
+ background-color:aquamarine;
+}
+.text{
+    text-align: center;
+    margin: 50px 0px 10px 10px;
+}
+h2{
+    color: red;
+    margin: auto;
+}
+.text h1{
+    text-align: center;
+    border: none;
+}
+.text h3{
+    margin-left: 80px;
+    text-align: center;
+    margin-right: 80px;
+    border: none;
+}
+.row1{
+    margin-top: 60px;
+    margin-left: 180px;
+}
+.row1 div{
+    /* border-radius: 50%;
+    border: 1px solid red;     */
+    width:  250px;
+    font-size: 100px;
+    /* height: 190px;         */
+       /* flex-wrap: wrap; */
+    /* display: block; */
+}
+
+
+.flex-wrap{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.div1 p{
+    font-weight: lighter;
+    font-size: 20px;
+    text-align: center;
+    /* justify-content: center; */
+    margin-right: 81px;
+    margin-top: 0;
+}
+.div2 p{
+    font-weight: lighter;
+    font-size: 20px;
+    text-align: center;
+    /* justify-content: center; */
+    margin-right: 108px;
+    margin-top: 0;
+}
+.div3 p{
+    font-weight: lighter;
+    font-size: 20px;
+    text-align: center;
+    /* justify-content: center; */
+    margin-right: 97px;
+    margin-top: 0;
+}
+.div4 p{
+    font-weight: lighter;
+    font-size: 20px;
+    text-align: center;
+    /* justify-content: center; */
+    margin-right: 110px;
+    margin-top: 0;
+}
+.div5 p{
+    font-weight: lighter;
+    font-size: 20px;
+    text-align: center;
+    /* justify-content: center; */
+    margin-right: 98px;
+    margin-top: 0;
+}
+.div6 p{
+    font-weight: lighter;
+    font-size: 20px;
+    text-align: center;
+    /* justify-content: center; */
+    margin-right: 104px;
+    margin-top: 0;
+}
+.div7 p{
+    font-weight: lighter;
+    font-size: 20px;
+    text-align: center;
+    /* justify-content: center; */
+    margin-right: 80px;
+    margin-top: 0;
+}
+.div8 p{
+    font-weight: lighter;
+    font-size: 20px;
+    text-align: center;
+    /* justify-content: center; */
+    margin-right: 83px;
+    margin-top: 0;
+}
+.div9 p{
+    font-weight: lighter;
+    font-size: 20px;
+    text-align: center;
+    /* justify-content: center; */
+    margin-right: 83px;
+    margin-top: 0;
+}
+.div1 i{
+    border-radius: 50%;
+    border:2px solid;
+    background-color: rgb(20, 156, 236);
+    color: white;
+    padding: 20px 25PX;
+}
+.div2 i{
+    border-radius: 50%;
+    border:2px solid;
+    background-color:orange;
+    color: white;
+    padding: 20px 25PX;
+}
+.div3 i{
+    border-radius: 50%;
+    border:2px solid;
+    background-color: rgb(234, 90, 18);
+    color: white;
+    padding: 20px 25PX;
+}
+.div4 i{
+    border-radius: 50%;
+    border:2px solid;
+    background-color: rgb(243, 11, 108);
+    color: white;
+    padding: 20px 25PX;
+}
+.div5 i{
+    border-radius: 50%;
+    border:2px solid;
+    background-color: rgb(39, 28, 138);
+    color: white;
+    padding: 20px 25PX;
+}
+.div6 i{
+    border-radius: 50%;
+    border:2px solid;
+    background-color: rgb(45, 208, 51);
+    color: white;
+    padding: 20px 25PX;
+}
+.div7 i{
+    border-radius: 50%;
+    border:2px solid;
+    background-color: rgb(19, 52, 62);
+    color: white;
+    padding: 20px 25PX;
+}
+.div8 i{
+    border-radius: 50%;
+    border:2px solid;
+    background-color: rgba(15, 92, 236, 0.701);
+    color: white;
+    padding: 20px 25PX;
+}
+.div9 i{
+    border-radius: 50%;
+    border:2px solid;
+    background-color: rgb(63, 54, 110);
+    color: white;
+    padding: 20px 25PX;
+}

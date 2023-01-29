@@ -1,0 +1,19 @@
+.block div {
+    display: block;
+}
+
+.inline div {
+    display: inline;
+    border: 1px solid;
+    padding: 50px;
+    margin: 70px;
+    background-color: rgba(26, 66, 129, 0.491);
+}
+
+.inline-block div {
+    display: inline-block;
+    border: 1px solid;
+    padding: 50px;
+    margin: 80px;
+    background-color: rgb(92, 67, 67);
+}

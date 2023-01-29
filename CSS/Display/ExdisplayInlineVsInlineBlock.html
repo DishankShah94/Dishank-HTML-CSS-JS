@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DisplayInline Vs InlineBlock</title>
+    <link rel="stylesheet" href="displayInlineVsInlineBlock.css">
+</head>
+<body>
+    <h2>Display Block</h2>
+    <div class="block">
+        <div class="list-item">Block</div>
+        <div class="list-item">Block</div>
+        <div class="list-item">Block</div>
+        <div class="list-item">Block</div>
+    </div>
+    <h2>Display inline</h2>
+    <div class="inline">
+        <p>display inline never consider margin-paading top-bottom</p>
+        <div class="list-item">Inline</div>
+        <div class="list-item">Inline</div>
+        <div class="list-item">Inline</div>
+        <div class="list-item">Inline</div>
+    </div>
+    <h2>Display inline-block</h2>
+    <div class="inline-block">
+        <p>display inline-block will be considered margin-paading top-bottom</p>
+        <div class="list-item">Inline Block</div>
+        <div class="list-item">Inline Block</div>
+        <div class="list-item">Inline Block</div>
+        <div class="list-item">Inline Block</div>
+    </div>
+</body>
+</html>

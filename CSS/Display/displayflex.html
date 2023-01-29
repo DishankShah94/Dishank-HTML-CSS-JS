@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display Flex</title>
+    <link rel="stylesheet" href="displayflex.css">
+</head>
+<body>
+    <ul>
+        <li>flex</li> 
+        <li>flex-basis</li> 
+        <li>flex-direction</li> 
+        <li>flex-flow</li> 
+        <li>flex-grow</li> 
+        <li>flex-shrink</li> 
+        <li>flex-wrap</li> 
+    </ul>
+    <h3>Display flex</h3>
+    <div class="row">
+        <div class="box">Flex</div>
+        <div class="box">Flex</div>
+        <div class="box">Flex</div>
+        <div class="box">Flex</div>
+        <div class="box">Flex</div>
+    </div>
+    <h3>Display flex-direction:column</h3>
+    <ul>
+        <li>column</li>
+        <li>column-reverse</li>
+        <li>row</li>
+        <li>row-reverse</li>
+    </ul>
+    <div class="row flex-dire-col">
+        <div class="box">Fire Direction 1</div>
+        <div class="box">Fire Direction 2</div>
+        <div class="box">Fire Direction 3</div>
+        <div class="box">Fire Direction 4</div>
+        <div class="box">Fire Direction 5</div>
+    </div>
+
+    <h2>align-content</h2>
+    <p>
+        align-content: flex-start | flex-end | center | space-between | space-around | stretch
+    </p>
+    <pre>
+        .flex-container {
+            align-content: space-around;
+        }
+    </pre>
+    <div class="row flex-container">
+        <div>Align Content 1</div>
+        <div>Align Content 2</div>
+        <div>Align Content 3</div>
+        <div>Align Content 4</div>
+        <div>Align Content 5</div>
+    </div>
+    <div class="row flex-justify-content ">
+        <div class="box">Justify Content 1</div>
+        <div class="box">Justify Content 2</div>
+        <div class="box">Justify Content 3</div>
+        <div class="box">Justify Content 4</div>
+        <div class="box">Justify Content 5</div>
+    </div>
+    <h2>Flex Without Wrap</h2>
+    <div class="row no-wrap">
+        <div class="box">No warp Example 1</div>
+        <div class="box">No warp Example 2</div>
+        <div class="box">No warp Example 3</div>
+        <div class="box">No warp Example 4</div>
+        <div class="box">No warp Example 5</div>
+        <div class="box">No warp Example 6</div>
+        <div class="box">No warp Example 7</div>
+        <div class="box">No warp Example 8</div>
+        <div class="box">No warp Example 9</div>
+        <div class="box">No warp Example 10</div>
+    </div>
+    <h2>Flex Wrap</h2>
+    <div class="row flex-wrap">
+        <div class="box">Wrap Example 1</div>
+        <div class="box">Wrap Example 2</div>
+        <div class="box">Wrap Example 3</div>
+        <div class="box">Wrap Example 4</div>
+        <div class="box">Wrap Example 5</div>
+        <div class="box">Wrap Example 6</div>
+        <div class="box">Wrap Example 7</div>
+        <div class="box">Wrap Example 8</div>
+        <div class="box">Wrap Example 9</div>
+        <div class="box">Wrap Example 10</div>
+        <div class="box">Wrap Example 11</div>
+        <div class="box">Wrap Example 12</div>
+        <div class="box">Wrap Example 13</div>
+    </div>
+    <h2>Flex Wrap Reverse</h2>
+    <div class="row flex-wrap-reverse">
+        <div class="box">Flex Wrap Reverse 1</div>
+        <div class="box">Flex Wrap Reverse 2</div>
+        <div class="box">Flex Wrap Reverse 3</div>
+        <div class="box">Flex Wrap Reverse 4</div>
+        <div class="box">Flex Wrap Reverse 5</div>
+        <div class="box">Flex Wrap Reverse 6</div>
+        <div class="box">Flex Wrap Reverse 7</div>
+        <div class="box">Flex Wrap Reverse 8</div>
+        <div class="box">Flex Wrap Reverse 9</div>
+    </div>
+    <h2>flex flow</h2>
+    <div class="row flex-flow">
+        <div class="box">Flex Flow 1</div>
+        <div class="box">Flex Flow 2</div>
+        <div class="box">Flex Flow 3</div>
+        <div class="box">Flex Flow 4</div>
+        <div class="box">Flex Flow 5</div>
+        <div class="box">Flex Flow 6</div>
+        <div class="box">Flex Flow 7</div>
+        <div class="box">Flex Flow 8</div>
+        <div class="box">Flex Flow 9</div>
+    </div>
+    <h2>flex column row gap</h2>
+    <div class="row flex-column-row-gap">
+        <div class="box">Flex Column row gap 1</div>
+        <div class="box">Flex Column row gap 2</div>
+        <div class="box">Flex Column row gap 3</div>
+        <div class="box">Flex Column row gap 4</div>
+        <div class="box">Flex Column row gap 5</div>
+        <div class="box">Flex Column row gap 6</div>
+        <div class="box">Flex Column row gap 7</div>
+    </div>
+    <h2>flex grow</h2>
+    <div class="row flex-grow">
+        <div class="box">Flex Grow 1</div>
+        <div class="box">Flex Grow 2</div>
+        <div class="box">Flex Grow 3</div>
+        <div class="box">Flex Grow 4</div>
+        <div class="box">Flex Grow 5</div>
+        <div class="box">Flex Grow 6</div>
+        <div class="box">Flex Grow 7</div>
+    </div>
+    <h4>This is a Flex-Grow</h4>
+    <h5>A,B,C and F are flex-grow:1 . D and E are flex-grow:2 .</h5>
+    <div class="content">
+        <div class="box-content" style="background-color:red;">A</div>
+        <div class="box-content" style="background-color:lightblue;">B</div>
+        <div class="box-content" style="background-color:yellow;">C</div>
+        <div class="box1-content" style="background-color:brown;">D</div>
+        <div class="box1-content" style="background-color:lightgreen;">E</div>
+        <div class="box-content" style="background-color:brown;">F</div>
+    </div>
+    <h4>Flex Shrink with Flex Basis</h4>
+    <div id="content">
+        <div class="box-content-shrink" style="background-color:red;">A</div>
+        <div class="box-content-shrink" style="background-color:lightblue;">B</div>
+        <div class="box-content-shrink" style="background-color:yellow;">C</div>
+        <div class="box1-content-shrink" style="background-color:brown;">D</div>
+        <div class="box1-content-shrink" style="background-color:lightgreen;">E</div>
+        <div class="box2-content-shrink" style="background-color:green">F</div>
+    </div>
+</body>
+</html>

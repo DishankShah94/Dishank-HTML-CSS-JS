@@ -1,0 +1,25 @@
+.block{
+    display: block;
+    width: 200px;
+    height: 100px;
+    background-color: yellow;
+    margin-bottom: 10px;
+}
+.inline{
+    display: inline;
+    width: 200px;
+    height: 100px;
+    background-color: yellow;
+}
+.inline-block{
+    display: inline-block;
+    width: 200px;
+    height: 100px;
+    background-color: yellow;
+}
+.disp-none{
+    display: none;
+       width: 200px;
+    height: 100px;
+    background-color: yellow;
+}
