@@ -1,0 +1,30 @@
+.container {
+    columns: 3;
+}
+
+img {
+    /* height: 100%; */
+    width: 100%;
+}
+
+.column-img img {
+    aspect-ratio: 9/5;
+    object-fit: fill;
+}
+
+.img1 {
+    width: 100%;
+    /* height: 280px; */
+}
+
+.img2 {
+    width: 100%;
+    /* height: 279px; */
+
+}
+
+.img3 {
+    width: 100%;
+    /* height: 275px; */
+
+}
