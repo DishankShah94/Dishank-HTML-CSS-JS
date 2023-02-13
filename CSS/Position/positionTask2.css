@@ -1,0 +1,37 @@
+.container{
+    width:900px;
+    height:700px;
+    margin: 0 auto;
+    position: relative;
+    background-color:#454545;
+}
+.img1{
+    position: relative;
+    left: 233px;
+    top: 63px;
+    height: 370px;
+}
+.raw{
+    position: absolute;
+    height: 330px;
+    width: 100%;
+    background-color: red;
+    top: 370px;
+}
+.text{
+    position: relative;
+    top: 55px;
+    left: 190px;
+    height: 220px;
+}
+.img2{
+    position: relative;
+    top: 35px;
+    left: 209px;
+    width: 30%;
+}
+.img3{
+    position: absolute;
+    left: 60px;
+    height: 122px;
+}

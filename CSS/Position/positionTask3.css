@@ -1,0 +1,60 @@
+.container{
+    width:1400px;
+    height:735px;
+    margin: 0 auto;
+    position: relative;
+    background: linear-gradient(
+    to right,
+    #92897f 0%,
+    #92897f 20%,
+    #dc9748 20%,
+    #dc9748 100%);
+}
+.row{
+    position: relative;
+    /* background-color: rgb(37, 25, 25); */
+    background-image: linear-gradient(130deg, #7B3F15,#53443a);
+    width: 1100px;
+    height: 550px;
+    top: 85px;
+    left: 173px
+}
+.col{
+    position: absolute;
+    border: 10px solid rgb(204, 177, 177);
+    width: 900px;
+    height: 450px;
+    background-color: rgb(130, 93, 93);
+    top: 45px;
+    left: 117px;
+}
+.img1{
+    position: absolute;
+    left: 520px;
+    top: 77px;
+}
+@font-face {
+    font-family: font;
+    src: url(./Lobster/Lobster-Regular.ttf);
+}
+.custom-fonts{
+    position:relative;
+    color: purple;
+    top: 75px;
+    left: 13px;
+    font-size: 70px;
+    font-family: font;
+}
+.btn{
+    background-color: rgb(55, 31, 31);
+    border: 2px solid white;
+    border-radius: 20%;
+    color: white;
+    position: relative;
+    width: 150px;
+    height: 35px;
+    top: 94px;
+    left: 100px;
+    font-size: 20px;
+
+}

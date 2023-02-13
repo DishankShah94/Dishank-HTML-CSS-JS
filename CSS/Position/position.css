@@ -1,0 +1,38 @@
+.box1{
+    width: 200px;
+    height: 200px;
+    background-color: purple;
+    position: absolute;
+    top: 0;
+}
+.box2{
+    width: 200px;
+    height: 200px;
+    background-color: greenyellow;
+    position: absolute;
+    right: 0;
+}
+.box3{
+    width: 200px;
+    height: 200px;
+    background-color:blue;
+    position: absolute;
+    bottom: 0;
+}
+
+.box4{
+    width: 200px;
+    height: 200px;
+    background-color:darkblue;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+.box5{
+    width: 200px;
+    height: 200px;
+    background-color:gray;
+    position: absolute;
+    left: 658px;
+    top: 258px;
+}
