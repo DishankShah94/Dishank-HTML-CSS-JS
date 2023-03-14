@@ -8,6 +8,7 @@
 .header-bg {
     background-image: url(../Images/Header\ Background.png);
     background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .container {
@@ -33,9 +34,6 @@
 
 }
 
-.col-50 {
-    width: 100%;
-}
 
 .search {
     width: 140px;
@@ -52,7 +50,7 @@
 
 .logo img {
     height: 25vh;
-    margin-left: 70px;
+    margin-left: 7px;
 }
 
 .nav-bar li a {
@@ -66,7 +64,7 @@
 }
 
 .h1-title {
-    margin-left: 100px;
+    margin-left: 0;
     /* margin-bottom: 10px; */
 }
 
@@ -89,15 +87,14 @@
 }
 
 .text p {
-    width: 469px;
-    height: 51px;
+    padding-left: 10px;
     font-size: 25px;
     letter-spacing: 5px;
     color: #ffffff;
     font-weight: 700;
     font-style: italic;
     font-family: "Open Sans";
-    text-align: center;
+    /* text-align: center; */
 }
 
 .button {
@@ -106,26 +103,35 @@
     height: 47px;
     border-radius: 21px;
     background-color: #ffffff;
-    margin: 100px;
-    margin-top: 20px;
-}
-
-.button .p1-btn {
+    
+     /* margin: 100px; */
+    margin-top: 60px;
     font-size: 15px;
     color: #2e3034;
     font-weight: 800;
     font-family: "Open Sans";
     text-align: center;
+    
 }
 
+/* .button .p1-btn {
+    font-size: 15px;
+    color: #2e3034;
+    font-weight: 800;
+    font-family: "Open Sans";
+    text-align: center;
+} */
+
 .text-1 {
-    margin: -70px 10px;
-    padding-left: 80px;
+    /* margin: -70px 10px; */
+    padding-top: 30px;
+    padding-left: 0;
 }
 
 .text-1 .text-p1 {
-    width: 452px;
-    height: 130px;
+    /* width: 400px; */
+      /* height: 130px; */
+    /* overflow: hidden; */
     font-size: 21px;
     letter-spacing: 1px;
     color: #ffffff;
@@ -135,17 +141,66 @@
 }
 
 section .pad {
-    padding-bottom: 100px;
+    /* padding-bottom: 100px; */
+    margin-bottom: 10px;
+}
+.sec1_img{
+    margin-top: 10px;
 }
 
+.div_img img{
+    width: 100%;
+}
+.div_img1 img{
+    width: 100%;
+    /* height: 95vh; */
+}
+.div_h1-1 h1{
+    font-size: 30px;
+    color: #343434;
+    font-weight: 700;
+    font-family: "Open Sans";
+    margin-bottom: 10px;
+}
+.div_h1-1 p{
+    font-size: 25px;
+    color: #343434;
+    font-weight: 400;
+    font-family: "Open Sans";
+}
+.div_h1 h1{
+    font-size: 30px;
+    color: #343434;
+    font-weight: 700;
+    font-family: "Open Sans";
+    margin-bottom: 10px;
+    
+}
+.div_h1 p{
+    font-size: 25px;
+    color: #343434;
+    font-weight: 400;
+    font-family: "Open Sans";
+}
+.sec1_img img{
+    /* display: block; */
+    width: 100%;
+}
+.sec1_img2 img{
+    display: block;
+    width: 100%;
+    /* height: 96vh; */
+}   
 .img-col2 {
-    height: 88vh;
+    /* height: 88vh; */
+    width: 100%;
     margin-top: 100px;
 }
 
 section .main-bg {
     /* height: 116vh; */
     background-color: white;
+    width: 100%;
 }
 
 section .main-p1 .main-p1-1 {
@@ -168,7 +223,9 @@ section .main-p1 .main-p1-1 {
 .col-33 {
     width: 100%;
 }
-
+.div_img1 .img-2{
+    width: 95%;
+}
 .main-p1-txt .main-p1-text {
     font-size: 27px;
     color: #2f3135;
@@ -176,30 +233,27 @@ section .main-p1 .main-p1-1 {
     font-family: "Open Sans";
     text-align: center;
     margin-top: 40px;
+    margin-bottom: 100px;
 }
-
-
-
 .js-c {
     justify-content: space-around;
     margin-top: 30px;
 }
-
 .col-33 .p1-div-text1 {
     margin-left: 57px;
 }
-
 .col-33 .p1-img-text1 {
     font-size: 20px;
     color: #343434;
     font-weight: 700;
     font-family: "Open Sans";
-    text-align: start;
+    /* text-align: start; */
 }
 
 .col-33 .p1-img-text2 {
+    margin-bottom: 10px;
     font-size: 20px;
-    margin-top: 19px;
+    /* margin-top: 19px; */
     color: #343434;
     font-weight: 700;
     font-family: "Open Sans";
@@ -263,14 +317,17 @@ section .main-p1 .main-p1-1 {
 .col-50 .main-p2-txt {
     margin-top: 50px;
 }
-
+.main-p2-txt{
+    width: 90%;
+}
 .main-p2-txt .main-p2-text {
     font-size: 16px;
     line-height: 26px;
     color: #ffffff;
     font-weight: 400;
     font-family: 'Montserrat', sans-serif;
-    margin-left: 119px;
+    margin: 0 auto;
+    /* margin-left: 119px; */
 }
 
 .js-c2 {
@@ -334,6 +391,7 @@ section .main-p1 .main-p1-1 {
 
 .h3-main-3 .h3-main-text {
     margin-top: 110px;
+    margin-left: 40px;
     font-size: 40px;
     color: #27292c;
     font-weight: 700;
@@ -341,8 +399,9 @@ section .main-p1 .main-p1-1 {
 }
 
 .h3-main-3 .p3-main-text {
+    margin-left: 40px;
     margin-top: 25px;
-    width: 640px;
+    /* width: 640px; */
     height: 175px;
     font-size: 25px;
     color: #27292c;
@@ -351,7 +410,7 @@ section .main-p1 .main-p1-1 {
 }
 
 .h3-main-3 .h3-main-text1 {
-    margin-left: 80px;
+    margin-left: 40px;
     margin-top: 110px;
     font-size: 40px;
     color: #27292c;
@@ -360,9 +419,9 @@ section .main-p1 .main-p1-1 {
 }
 
 .h3-main-3 .p3-main-text1 {
-    margin-left: 80px;
+    margin-left: 40px;
     margin-top: 25px;
-    width: 640px;
+    /* width: 640px; */
     height: 175px;
     font-size: 25px;
     color: #27292c;
@@ -371,6 +430,7 @@ section .main-p1 .main-p1-1 {
 }
 
 .btn-main-3 {
+    margin-left: 30px;
     width: 230px;
     height: 75px;
     border-radius: 37px;
@@ -389,7 +449,7 @@ section .main-p1 .main-p1-1 {
 }
 
 .btn-main-3-1 {
-    margin-left: 80px;
+    margin-left: 30px;
     width: 230px;
     height: 75px;
     border-radius: 37px;
@@ -405,6 +465,8 @@ section .main-p1 .main-p1-1 {
 .section4 .main-bg {
     background-image: url(../Images/Header\ Background.png);
     /* height: 100vh; */
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .h1-main-txt4 .h1-main-text4 {
@@ -413,11 +475,13 @@ section .main-p1 .main-p1-1 {
     font-family: "Reey";
     text-align: center;
     padding-top: 80px;
+    position: relative;
+    z-index: 10;
 }
 
 .div4-main-text .p4-main-text {
-    width: 700px;
-    height: 65px;
+    /* width: 700px; */
+    /* height: 65px; */
     font-size: 16px;
     line-height: 26px;
     color: #f8f6f1;
@@ -426,6 +490,8 @@ section .main-p1 .main-p1-1 {
     margin: 0 auto;
     text-align: center;
     margin-top: 60px;
+    position: relative;
+    z-index: 10;
 }
 
 .rect {
@@ -448,18 +514,17 @@ section .main-p1 .main-p1-1 {
 }
 
 .img-pizza1 {
-    height: 70vh;
+    /* height: 70vh; */
+    /*  width: 100%;   */
     margin-top: 80px;
-    margin-left: 472px;
+    margin-left: 300px;
+    display: block;
+    margin: 0 auto;
 }
 
 .section5 .main-bg {
     background-color: white;
     /* height: 100vh; */
-}
-
-.col-33 {
-    width: 100%;
 }
 
 .h1-main-4 {
@@ -504,7 +569,7 @@ section .main-p1 .main-p1-1 {
 }
 
 .div-main-p5 .div5-main-p5 {
-    width: 817px;
+    /* width: 817px; */
     font-size: 25px;
     color: #3f3f3f;
     font-weight: 600;
@@ -542,8 +607,8 @@ section .main-p1 .main-p1-1 {
 }
 
 .div6-main-text6 .p6-main-text6 {
-    width: 660px;
-    height: 176px;
+    /* width: 660px; */
+    /* height: 176px; */
     text-align: center;
     margin: 0 auto;
     font-size: 20px;
@@ -554,7 +619,7 @@ section .main-p1 .main-p1-1 {
 }
 
 #search {
-    width: 659px;
+    width: 659px; 
     height: 50px;
     border-radius: 32px;
     font-size: 15px;
@@ -582,10 +647,6 @@ section .main-p1 .main-p1-1 {
     position: absolute;
     right: 200px;
     bottom: 0;
-}
-
- .col-25 {
-    width: 100%;
 }
 
 .div-footer-title {
@@ -735,7 +796,15 @@ section .main-p1 .main-p1-1 {
     font-family: "Montserrat";
     text-decoration: none;
 }
-
+.col-25{
+    width: 100%;
+}
+.col-33{
+    width: 100%;
+}
+.col-50{
+    width: 100%;
+}
 @media (min-width: 576px) {
     .container {
         width: 540px;
