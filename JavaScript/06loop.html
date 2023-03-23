@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //Entry control loop
+        // for (let a = 1; a <=10 ; a++) {
+        //     alert(a) 
+        // }
+        arr = [10, 20, 30, 40, 50]
+        // for (let index = 0; index < arr.length; index++) {
+        //     const element = arr[index];
+        //     console.log(element)
+        // }
+        // arr.forEach(element => {
+        //    console.log(element); 
+        // });
+        // whiledata=15
+        // while(whiledata<=20){
+        //     console.log(whiledata);
+        //     whiledata++;
+        // }
+        //exit control loop
+        data = 20;
+        do {
+            console.log("do while loop execute")
+            console.log(data)
+            data++;
+        } while (data > 30);
+        //when we are use array we use array of.
+        names=["Abc","Xyz","FKFK","dkfk"]
+        for (let x of names) {
+            document.write(x,"<br>");
+        }
+        const y={
+            re:"react",
+            ht:"html",
+            cs:"css",
+            bt:"bootstrap"
+        }
+        for (const ans in y){
+            document.write(y[ans],"<br>")
+        }
+    </script>
+</body>
+
+</html>

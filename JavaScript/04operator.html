@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h2>Arithmetic Operator</h2>
+    <ul>
+        <li>Addition +</li>
+        <li>Subtraction -</li>
+        <li>Multiplication *</li>
+        <li>Division /</li>
+        <li>Exponentiation **</li>
+        <li>Modulus % (reminder)</li>
+        <li>++ Increment</li>
+        <li>-- Decrement</li>
+    </ul>
+    <script>
+        let a = 20;
+        let b = 10;
+        document.write(a + b, "<br>")
+        document.write(a - b, "<br>")
+        document.write(a * b, "<br>")
+        document.write(a / b, "<br>")
+        document.write(a ** b, "<br>")
+        document.write(a % b, "<br>")
+        document.write(a++, "<br>")
+        document.write(b--, "<br>")
+        document.write(--a, "<br>")
+        document.write(--b, "<br>")
+    </script>
+    <h2>Assignment Operator</h2>
+    <ul>
+        <li>= x = y x = y</li>
+        <li> += x += y x = x + y</li>
+        <li> -= x -= y x = x - y</li>
+        <li> *= x *= y x = x * y</li>
+        <li> /= x /= y x = x / y</li>
+        <li> %= x %= y x = x % y</li>
+        <li> **= x **= y x = x ** y</li>
+    </ul>
+    <h2>Comparison Assignment</h2>
+    <ul>
+       <li> ==	equal to</li>
+    <li>    ===	equal value and equal type</li>
+    <li>  !=	not equal</li>
+    <li>    !==	not equal value or not equal type</li>
+    <li>    >	greater than</li>
+    <li>    <	less than</li>
+    <li>    >=	greater than or equal to</li>
+    <li>    <=	less than or equal to</li>
+    <li>    ?	ternary operator</li>
+    </ul>
+    <script>
+        var m1=parseInt(prompt("enter Maths marks"))
+        var m2=parseInt(prompt("enter English marks"))
+        var m3=parseInt(prompt("enter Gujarati marks"))
+        var m4 =parseInt(prompt("enter Hindi marks"))
+        var m5= parseInt(prompt("enter Science marks"))
+        total = parseInt(m1+m2+m3+m4+m5)
+        document.write("total marks-",total,"<br>")
+        percentage = total*100/500;
+        document.write("percentage-", percentage)
+        if(percentage<=100 && percentage>=50)
+        {
+            //if inside if is called nested if
+            if (percentage >= 50 && percentage < 60) {
+                alert("pass Class");
+            }else if (percentage >= 60 && percentage < 70){ //else if ladder example
+                alert("second Class");
+            }else if (percentage >= 70 && percentage < 80){
+               alert("first Class");
+            }else if (percentage >= 80 && percentage < 90){
+                alert("Disct ");
+            }else if (percentage >= 90 && percentage <= 100){
+                alert("Disct +");
+            }
+        } else {
+            alert("try again");
+        }
+    </script>
+    <h2>Type of Operator</h2>
+    <script>
+        a= 50
+        a = a + 5;
+        a += 5;
+        b= 50
+        sum = a+b
+        document.write(sum,"<br>");
+       document.write(typeof sum,"<br>");
+        document.write(typeof "true","<br>");
+        document.write(typeof true,"<br>");
+    </script>
+</body>
+
+</html>
