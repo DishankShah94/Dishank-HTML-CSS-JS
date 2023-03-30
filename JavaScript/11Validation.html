@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form method="post">
+
+        <!-- <input type="text" placeholder="Enter User Name" autocomplete="off" required onblur="requirefield()" name="username" id="username"> -->
+        <input type="text" placeholder="Enter User Name" autocomplete="off" required onblur="requirefield(this)"
+            name="username" id="username"><label id="usernameError" for=""></label>
+        <input type="text" placeholder="Enter User Last Name" autocomplete="off" required onblur="requirefield(this)"
+            name="lastname" id="lastname"><label id="lastnameError" for=""></label>
+        <input type="email" name="useremail" id="useremail" autocomplete="off" placeholder="Enter User Email Address"
+            required onblur="requirefield(this)"><label for="" id="useremailError"></label>
+        <input type="submit" name="btn" id="btn">
+    </form>
+    <script>
+        function requirefield(idcompare) {
+            var input = [document.getElementById('username'), document.getElementById('lastname'), document.getElementById('useremail')];
+            for (var i = 0; i < input.length; i++) {
+                if (input[i].value == "" && idcompare.id == input[i].id) {
+                    switch (input[i].id) {
+                        case 'username':
+                            document.getElementById('usernameError').innerHTML = 'This Username field is required';
+                            break;
+                        case 'lastname':
+                            document.getElementById('lastnameError').innerHTML = 'This last name field is required';
+                            break;
+                        case 'useremail':
+                            document.getElementById('useremailError').innerHTML = 'This email field is required';
+                            break;
+                    }
+                }
+            }
+        }
+    </script>
+</body>
+
+</html>
