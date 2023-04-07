@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <img src="Place Your Image Here (Double Click to Edit).png" alt="" class="slider-img">
+    <img src="Place Your Image Here (Double Click to Edit) (1).png" alt="" class="slider-img">
+    <img src="Place Your Image Here (Double Click to Edit) (2).png" alt="" class="slider-img">
+    <img src="pizza1.png" alt="" class="slider-img">
+    <img src="pizza2.png" alt="" class="slider-img">
+    <script>
+        counter = 0
+        function slider(params) {
+            SliderImageData = document.getElementsByClassName("slider-img")
+            console.log(SliderImageData);
+            let index;
+            for (index = 0; index < SliderImageData.length; index++) {
+                const element = SliderImageData[index];
+                console.log(element);
+                SliderImageData[index].style.display = "none"
+                SliderImageData[index].classList.remove("slider-effect")
+            }
+            // console.log("counter",counter);
+            // console.log("SliderImageData.length",SliderImageData.length);
+            if (counter >= SliderImageData.length) {
+                counter = 0
+            }
+            SliderImageData[counter].style.display = "block"
+            SliderImageData[counter].classList.add("slider-effect")
+            setTimeout(() => {
+                counter++;
+                slider()
+            }, 3000);
+        }
+        slider()
+    </script>
+</body>
+
+</html>

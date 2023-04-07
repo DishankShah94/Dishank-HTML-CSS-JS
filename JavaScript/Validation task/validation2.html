@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form method="post" id="myForm">
+        <input type="text" placeholder="Enter User Name" autocomplete="off" name="username" id="username"><br><br>
+        <input type="password" placeholder="Enter Password" autocomplete="off" name="password" id="password">
+        <p></p>
+        <input type="email" placeholder="Enter Email Id" autocomplete="off" name="emailId" id="emailId">
+        <p></p>
+        <input type="tel" placeholder="Enter Mobile Number" autocomplete="off" name="mobile" id="mobile">
+        <p></p>
+        <input type="submit" name="btn" id="btn">
+    </form>
+    <script>
+        document.getElementById('myForm').addEventListener('submit', (e) => {
+            e.preventDefault();
+        });
+    </script>
+</body>
+
+</html>

@@ -24,29 +24,38 @@
         // });
         // whiledata=15
         // while(whiledata<=20){
-        //     console.log(whiledata);
+        //     document.write(whiledata,"<br>")
         //     whiledata++;
         // }
         //exit control loop
-        data = 20;
-        do {
-            console.log("do while loop execute")
-            console.log(data)
-            data++;
-        } while (data > 30);
-        //when we are use array we use array of.
-        names=["Abc","Xyz","FKFK","dkfk"]
-        for (let x of names) {
-            document.write(x,"<br>");
+
+        // do {
+        //     console.log("do while loop execute")
+        //     console.log(data)
+        //     data++;
+        // } while (data > 30);
+        // //when we are use array we use array of.
+        // names = ["Abc", "Xyz", "FKFK", "dkfk"]
+        // for (var x of names) {
+        //     document.write(x, "<br>");
+        // }
+        // let y = {
+        //     re: "react",
+        //     ht: "html",
+        //     cs: "css",
+        //     bt: "bootstrap"
+        // }
+        // for (var ans in y) {
+        //     document.write(y[ans], "<br>")
+        // }
+        name = ["Dishank", "Sehwag", "Sachin", "Virat", "Rohit"]
+        for (const names of name) {
+            document.write(names)
         }
-        const y={
-            re:"react",
-            ht:"html",
-            cs:"css",
-            bt:"bootstrap"
-        }
-        for (const ans in y){
-            document.write(y[ans],"<br>")
+        document.write("<br>")
+        for (const key in name) {
+            // const element = object[key];
+            document.write(name)
         }
     </script>
 </body>
