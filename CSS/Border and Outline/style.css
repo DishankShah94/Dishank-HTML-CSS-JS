@@ -44,7 +44,8 @@ div[class*="border-style"]{
     border-style: solid;
 }
 .border-radius{
-    border-radius: 10px 30px 10px 30px; 
+    border-radius: 10px 30
+    px 10px 30px; 
     display: inline-block;
     border: 5px solid teal;
     
