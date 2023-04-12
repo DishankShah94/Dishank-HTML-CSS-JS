@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery</title>
+</head>
+<style>
+    .change {
+        background-color: aqua;
+        color: white;
+    }
+</style>
+
+<body>
+    <p id="p1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est illo amet repellat excepturi doloribus
+        porro cum adipisci, dolores dolorem eveniet, labore, magni necessitatibus cupiditate mollitia quod itaque rem
+        dignissimos maiores.
+    </p>
+    <button id="btn" class="continue">
+        Add
+    </button>
+    <button id="remove-btn" >Remove</button>
+    <button id="toi-btn">Toogle button</button>
+    <script src="https://code.jquery.com/jquery-3.6.4.js"
+        integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E=" crossorigin="anonymous"></script>
+    <script>
+        document.getElementById("btn").addEventListener("click", function () {
+            $("#p1").addClass("change")
+        })
+        document.getElementById("remove-btn").addEventListener("click", function () {
+            $("#p1").removeClass("change")
+        })
+        document.getElementById("toi-btn").addEventListener("click", function () {
+            $("#p1").toggleClass("change")
+        })
+    </script>
+</body>
+
+</html>
