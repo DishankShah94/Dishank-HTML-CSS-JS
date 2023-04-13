@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>height demo</title>
+    <style>
+        .box {
+            width: 50px;
+            height: 70px;
+            float: left;
+
+            margin: 5px;
+            background: rgba(255, 140, 0, 0.649);
+            /* cursor: pointer; */
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"
+        integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+    <script>
+        $("div").one("click", function () {
+            // console.log($( this ).height(50));
+            // console.log($( this ).height(  ));
+            $(this).height(30).css({ backgroundColor: "green" })
+        });
+    </script>
+
+</body>
+
+</html>

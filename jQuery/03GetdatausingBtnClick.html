@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p id="p1">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, blanditiis expedita harum soluta adipisci vero
+        velit deleniti repellendus, praesentium corporis odio culpa officia delectus! Perferendis ullam nisi ratione qui
+        consequuntur.
+    </p>
+    <button id="btn">
+        click
+    </button>
+    <span id="fetchData"></span>
+    <script src="https://code.jquery.com/jquery-3.6.4.js"
+        integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E=" crossorigin="anonymous"></script>
+    <script>
+
+        var content = ["CSS Data"];
+        $("#btn").click(function () {
+            console.log("called")
+            data = $(this).css([
+                "width", "height", "color", "background-color"
+
+            ]);
+            console.log(data)
+            $("#fetchData").html(content.join("<br>"));
+        })
+    </script>
+</body>
+
+</html>

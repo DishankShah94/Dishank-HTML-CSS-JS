@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    p {
+        margin: 5px;
+        font-size: 20px;
+    }
+
+    .selected {
+        color: blue;
+    }
+</style>
+
+<body>
+    <p>This paragraph is black and is the first paragraph.</p>
+    <p class="selected">
+        This paragraph is blue and is the second paragraph.
+    </p>
+    <p class="selected">This paragraph is second paragraph</p>
+    <div id="result1">First paragraph has selected class: </div>
+    <div id="result2">Last paragraph has selected class: </div>
+    <div id="result3">At least one paragraph has selected class: </div>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"
+        integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+    <script>
+        $("#result1").append($("p").first().hasClass("selected").toString());
+        $("#result2").append($("p").last().hasClass("selected").toString());
+        $("#result3").append($("p").hasClass("selected").toString());
+    </script>
+</body>
+
+</html>

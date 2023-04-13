@@ -12,7 +12,7 @@
         height: 50px;
         margin: 5px;
         padding: 5px;
-       
+
     }
 
     #box1 {
@@ -54,7 +54,20 @@
         <div id="box3"></div>
         <div id="box4"></div>
         <p id="result"></p>
-        
+        <script src="https://code.jquery.com/jquery-3.6.4.js"
+            integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E=" crossorigin="anonymous"></script>
+        <script>
+            $('div').click(function () {
+                var htmlContent = ["The clicked div has the following styles:"];
+                var styleprops = $(this).css([
+                    "width", "height", "color", "background-color"
+                ]);
+                $.each(styleprops, function (key, value) {
+                    htmlContent.push(key + ": " + value);
+                })
+                $("#result").html(htmlContent.join("<br>"));
+            })
+        </script>
     </div>
 </body>
 
