@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            width: 200px;
+            height: 200px;
+            background-color: aqua;
+
+        }
+    </style>
+</head>
+
+<body>
+    <p id="text">Testing Test</p>
+    <p id="p_html">Learn and Explore</p>
+    <input type="text" id="input" value="jQuery is powerfull">
+    <p id="alignid">Test</p>
+    <div class="box">
+
+    </div>
+    <button class="changetext">Change Text</button>
+    <button class="changeHtml">Change HTML</button>
+    <button class="changeValue">Change Value</button>
+    <button class="alignchange">Change Align</button>
+    <button class="changeShape">Change Shape</button>
+    <script src="https://code.jquery.com/jquery-3.6.4.js"
+        integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E=" crossorigin="anonymous"></script>
+    <script>
+        $(".changetext").click(function () {
+            $("#text").text("Welcome to text event");
+        })
+        $(".changeHtml").click(function () {
+            $("#p_html").css("font-weight", "bold")
+        })
+        $(".changeValue").click(function () {
+            $("#input").val("jQuery is powerfull language")
+        })
+        $(".alignchange").click(function () {
+            $("#alignid").css("text-align", "end")
+        })
+        $(".changeShape").click(function () {
+            $(".box").css({ "width": "200px", "height": "200px", "background-color": "aqua", "border-radius": "50%" })
+        })
+    </script>
+</body>
+
+</html>
