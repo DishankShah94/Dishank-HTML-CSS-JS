@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fade in-out</title>
+</head>
+
+<body>
+    <h1>jQuery | fadeout() Method</h1>
+    <button class="btn-fade-in">Fade In</button>
+    <button class="btn-fade-out">Fade Out</button>
+    <script src="https://code.jquery.com/jquery-3.6.4.js"
+        integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E=" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function () {
+            $(".btn-fade-out").click(function () {
+                $("h1").fadeOut();
+            })
+            $(".btn-fade-in").click(function () {
+                $("h1").fadeIn();
+            })
+        })
+    </script>
+</body>
+
+</html>

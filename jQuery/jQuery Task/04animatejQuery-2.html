@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery animation 2</title>
+</head>
+<style>
+    .box {
+        width: 100px;
+        height: 100px;
+        background-color: lightgreen;
+    }
+    button{
+        margin: 5px 0;
+    }
+</style>
+
+<body>
+    <div class="box"></div>
+    <button>Start Animation</button>
+    <script src="https://code.jquery.com/jquery-3.6.4.js"
+        integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E=" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function () {
+            $("button").click(function () {
+                var div = $("div");
+                div.animate({ height: '300px', opacity: '0.4' }, "slow");
+                div.animate({ width: '300px', opacity: '0.8' }, "slow");
+                div.animate({ height: '100px', opacity: '0.4' }, "slow");
+                div.animate({ width: '100px', opacity: '0.8' }, "slow");
+            })
+        })
+    </script>
+</body>
+
+</html>
