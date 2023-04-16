@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Remove Class</title>
+</head>
+<style>
+    #box {
+        width: 10%;
+        padding: 60px;
+        border: 2px solid green;
+        text-align: center;
+        margin: 5px 0;
+    }
+
+    h1 {
+        text-align: center;
+        margin: 5px 0;
+    }
+
+    #btn1 {
+        padding: 10px 10px;
+        text-align: center;
+        background-color: green;
+        color: white;
+        /* display: flex;
+        margin: 0 auto; */
+    }
+
+    #btn2 {
+        padding: 10px 10px;
+        text-align: center;
+        background-color: green;
+        color: white;
+        /* display: flex;
+        margin: 0 auto; */
+    }
+
+    .bg-color {
+        background-color: lightgreen;
+        color: white;
+    }
+</style>
+
+<body>
+    <h1>Add and Remove Class</h1>
+    <button id="btn1">ADD CLASS</button>
+    <button id="btn2">REMOVE CLASS</button>
+    <div id="box">
+        Dishank Shah
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.4.js"
+        integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E=" crossorigin="anonymous"></script>
+    <script>
+        $("#btn1").click(function () {
+            $("#box").addClass("bg-color");
+        })
+        $("#btn2").click(function () {
+            $("#box").removeClass("bg-color");
+        })
+    </script>
+</body>
+
+</html>

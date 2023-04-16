@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stop Method in jQuery</title>
+    <style>
+        h2 {
+            text-align: center;
+        }
+
+        #panel {
+            width: 10%;
+            padding: 5px 0;
+            border: 2px solid green;
+            text-align: center;
+            display: block;
+            margin: 0 auto;
+        }
+
+        #output {
+            width: 10%;
+            padding: 50px 0;
+            border: 2px solid green;
+            text-align: center;
+            /* display: none; */
+            margin: 0 auto;
+
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Slide Up/Down Example</h2>
+    <div id="panel">Slide Up/down effect</div>
+    <div id="output">Dishank Shah</div>
+    <script src="https://code.jquery.com/jquery-3.6.4.js"
+        integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E=" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function () {
+            $("#panel").click(function () {
+                $("#output").slideUp(5000)
+    
+            })
+        })
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Callback</title>
+</head>
+<style>
+    #panel {
+        padding: 20px;
+        text-align: center;
+        border: 2px solid green;
+    }
+
+    #btn1 {
+        padding: 10px 5px;
+        background-color: orange;
+        color: white;
+        margin: 5px 0;
+    }
+
+    #btn2 {
+        padding: 10px 5px;
+        background-color: orange;
+        color: white;
+        margin: 5px 0;
+    }
+</style>
+
+<body>
+    <div id="panel">
+        Dishank Shah
+    </div>
+    <button id="btn1">Without callback function</button>
+    <button id="btn2">With callback function</button>
+    <script src="https://code.jquery.com/jquery-3.6.4.js"
+        integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E=" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function () {
+            $("#btn1").click(function () {
+                $("#panel").hide(1000);
+                alert("Without callback function");
+            })
+            $("#btn2").click(function () {
+                $("#panel").hide(1000, function () {
+                    alert("With callback function");
+                })
+            })
+        })
+    </script>
+</body>
+
+</html>

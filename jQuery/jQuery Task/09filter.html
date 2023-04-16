@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>filter</title>
+    <style>
+
+    </style>
+    <script src="https://code.jquery.com/jquery-3.6.3.js"></script>
+</head>
+
+<body>
+    <ul>
+        <li class="back">option 1</li>
+        <li class="back">option 2</li>
+        <li>option 3</li>
+        <li class="back">option 4</li>
+        <li class="back">option 5</li>
+
+    </ul>
+
+    <script>
+        $("li")
+            .css("background", "yellow")
+            .filter(".back")
+            .css("color", "red");
+    </script>
+
+</body>
+
+</html>
