@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slide Animation</title>
+    <style>
+        .box {
+            width: 20px;
+            padding: 10%;
+            background-color: green;
+            margin: 10px 0;
+        }
+    </style>
+</head>
+
+<body>
+    <button id="start">Start</button>
+    <button id="stop">Stop</button>
+    <div class="box"></div>
+    <script src="https://code.jquery.com/jquery-3.6.4.js"
+        integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E=" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function () {
+            $("#start").click(function () {
+                $(".box").animate({ padding: "15% 0", width: "200px" }, "slow");
+                $(".box").animate({ padding: "15% 0", width: "350px" }, "slow");
+                $(".box").animate({ padding: "10% 0", width: "350px" }, "slow");
+                $(".box").animate({ padding: "10% 0", width: "200px" }, "slow");
+
+            })
+            $("#stop").click(function () {
+                $(".box").stop();
+                // $(".box").animate({ padding: "10% 0", width: "200px" }, "slow");
+            })
+        })
+    </script>
+</body>
+
+</html>
