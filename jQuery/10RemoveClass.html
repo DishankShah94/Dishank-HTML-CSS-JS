@@ -9,7 +9,11 @@
 </head>
 <style>
     .p1 {
-        background-color: blue;
+        font-size: 40px;
+    }
+
+    .heghlight {
+        background-color: yellow;
         color: white;
     }
 </style>
@@ -18,7 +22,8 @@
     <p class="p1">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolores eius sequi, molestiae reprehenderit
         maiores molestias quos. Neque explicabo excepturi ipsam aut velit aspernatur error, rerum facere soluta
         assumenda eum maiores.</p>
-    <p class="p1">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolores eius sequi, molestiae reprehenderit
+    <p class="p1 heghlight">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolores eius sequi, molestiae
+        reprehenderit
         maiores molestias quos. Neque explicabo excepturi ipsam aut velit aspernatur error, rerum facere soluta
         assumenda eum maiores.</p>
     <p class="p1">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolores eius sequi, molestiae reprehenderit
@@ -30,7 +35,7 @@
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"
         integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
     <script>
-        $(".p1").eq(1).removeClass();
+        $(".p1").eq(1).removeClass("heghlight");
     </script>
 </body>
 

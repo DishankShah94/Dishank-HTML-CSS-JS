@@ -22,13 +22,14 @@
     <button id="btn" class="continue">
         Add
     </button>
-    <button id="remove-btn" >Remove</button>
+    <button id="remove-btn">Remove</button>
     <button id="toi-btn">Toogle button</button>
     <script src="https://code.jquery.com/jquery-3.6.4.js"
         integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E=" crossorigin="anonymous"></script>
     <script>
         document.getElementById("btn").addEventListener("click", function () {
             $("#p1").addClass("change")
+            
         })
         document.getElementById("remove-btn").addEventListener("click", function () {
             $("#p1").removeClass("change")
