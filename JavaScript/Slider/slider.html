@@ -8,9 +8,13 @@
     <title>Document</title>
     <style>
         .slider-effect {
-            /* animation: slider 1s linear infinite; */
-            transition: all .5s;
-            transform: translateX(3in);
+            animation: slidereffect 1s ease-in;
+        }
+
+        @keyframes slidereffect {
+            to {
+                transform: translate(450px);
+            }
         }
     </style>
 </head>
@@ -23,7 +27,7 @@
     <img src="pizza2.png" alt="" class="slider-img">
     <script>
         counter = 0
-        function slider(params) {
+        function slider() {
             SliderImageData = document.getElementsByClassName("slider-img")
             console.log(SliderImageData);
             let index;
@@ -40,10 +44,8 @@
             }
             SliderImageData[counter].style.display = "block"
             SliderImageData[counter].classList.add("slider-effect")
-            setTimeout(() => {
-                counter++;
-                slider()
-            }, 3000);
+            counter++;
+            setTimeout(slider, 3000);
         }
         slider()
     </script>
