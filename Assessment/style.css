@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 1380px;
+    margin: 0 auto;
+}
+
+.fname {
+    padding: 0 10px;
+    /* margin: 0 10px; */
+}
+
+h1 {
+    text-align: center;
+}
+
+.form_wrap {
+    margin: 10px auto;
+}
+
+.Ifname {
+    width: 80%;
+    padding: 20px 20px;
+}
+
+.lname {
+    padding: 0 10px;
+}
+
+.Ilname {
+    width: 80%;
+    padding: 20px 20px;
+}
+
+.email {
+    padding: 0 10px;
+}
+
+.iemail {
+    width: 80%;
+    padding: 20px 20px;
+    margin-left: 15px;
+}
+
+.mobile {
+    padding: 0 10px;
+}
+
+.number {
+    width: 80%;
+    padding: 20px 20px;
+    margin-left: 24px;
+}
+
+.gender {
+    padding: 0 10px;
+}
+
+.imale {
+    padding: 20px 20px;
+    margin-left: 25px;
+}
+
+.ifemale {
+    padding: 20px 20px;
+    margin-left: 25px;
+}
+
+.dob {
+    padding: 0 10px;
+}
+
+.date {
+    width: 79%;
+    padding: 10px 20px;
+}
+
+.address {
+    padding: 0 10px;
+}
+
+.iAddress {
+    width: 80%;
+    padding: 50px 20px;
+    margin-left: 25px;
+
+}
+
+.city {
+    padding: 0 10px;
+}
+
+.icity {
+    width: 80%;
+    padding: 20px 20px;
+    margin-left: 48px;
+}
