@@ -11,7 +11,11 @@ function registration() {
     var state = document.forms["reg"]["state"].value;
     var select = document.getElementById('qualification');
     var qu = select.options[select.selectedIndex].value;
-    
+    var cs = document.getElementById("cs").value;
+    var it = document.getElementById("it").value;
+    var ca = document.getElementById("ca").value;
+    var tc = document.getElementById("tc").value;
+    var pass = document.forms["reg"]["password"].value;
     if (fname == "") {
         alert("First Name must be required")
         return false;
@@ -20,7 +24,52 @@ function registration() {
         alert("Last Name must be required")
         return false;
     }
+    else if (email == "") {
+        alert("email must be required")
+        return false;
+    }
+    else if (mobile == "") {
+        alert("mobile must be required")
+        return false;
+    }
+    else if (gender == "") {
+        alert("gender must be required")
+        return false;
+    }
+    else if (dob == "") {
+        alert("dob must be required")
+        return false;
+    }
+    else if (address == "") {
+        alert("address must be required")
+        return false;
+    }
+    else if (city == "") {
+        alert("city must be required")
+        return false;
+    }
+    else if (area == "") {
+        alert("area pin must be required")
+        return false;
+    }
+    else if (state == "") {
+        alert("state must be required")
+        return false;
+    }
+    else if (qu == "") {
+        alert("qualification must be required")
+        return false;
+    }
+    else if (cs == "" || it == "" || ca == "" || tc == "") {
+        alert("checkbox must be required")
+        return false;
+    }
+    else if (pass == "") {
+        alert("password must be required")
+        return false;
+    }
+
     else {
-        alert("name is entered successfully")
+        alert("All entry successfully entered")
     }
 }
