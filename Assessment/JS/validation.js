@@ -11,11 +11,19 @@ function registration() {
     var state = document.forms["reg"]["state"].value;
     var select = document.getElementById('qualification');
     var qu = select.options[select.selectedIndex].value;
-    var cs = document.getElementById("cs").value;
-    var it = document.getElementById("it").value;
-    var ca = document.getElementById("ca").value;
-    var tc = document.getElementById("tc").value;
+    // var cs = document.getElementById("cs").value;
+    // var it = document.getElementById("it").value;
+    // var ca = document.getElementById("ca").value;
+    // var tc = document.getElementById("tc").value;
+    var spe = document.getElementsByName('specialization');
+    var result = "";
     var pass = document.forms["reg"]["password"].value;
+    for (var i = 0; i < spe.length; i++) {
+        if (spe[i].checked) {
+            result += spe[i].value;
+        }
+    }
+
     if (fname == "") {
         alert("First Name must be required")
         return false;
@@ -60,7 +68,7 @@ function registration() {
         alert("qualification must be required")
         return false;
     }
-    else if (cs == "" || it == "" || ca == "" || tc == "") {
+    else if (result == "") {
         alert("checkbox must be required")
         return false;
     }
