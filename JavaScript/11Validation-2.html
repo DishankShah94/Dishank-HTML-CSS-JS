@@ -11,8 +11,8 @@
 <body>
     <form method="post">
         <input type="text" placeholder="Enter User Name" autocomplete="off" required
-            onblur="requirefield(this,'usernameError')" name="username" id="username"><label id="usernameError"
-            for=""></label>
+            onblur="requirefield(this,'usernameError')" name="username" id="username">
+            <label id="usernameError" for=""></label>
         <input type="text" placeholder="Enter User Name" autocomplete="off" required
             onblur="requirefield(this,'passwordError')" name="username" id="username"><label id="passwordError"
             for=""></label>
@@ -25,6 +25,7 @@
         <input type="submit" name="btn" id="btn">
     </form>
     <script>
+        
         function requirefield(e, spnid) {
             // let p = document.createElement("p");
             
