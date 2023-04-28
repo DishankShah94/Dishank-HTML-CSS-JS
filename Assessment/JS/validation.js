@@ -11,12 +11,9 @@ function registration() {
     var state = document.forms["reg"]["state"].value;
     var select = document.getElementById('qualification');
     var qu = select.options[select.selectedIndex].value;
-    // var cs = document.getElementById("cs").value;
-    // var it = document.getElementById("it").value;
-    // var ca = document.getElementById("ca").value;
-    // var tc = document.getElementById("tc").value;
     var spe = document.getElementsByName('specialization');
     var result = "";
+    var name = /^([a-zA-Z])+$/;
     var pass = document.forms["reg"]["password"].value;
     for (var i = 0; i < spe.length; i++) {
         if (spe[i].checked) {
@@ -26,58 +23,78 @@ function registration() {
 
     if (fname == "") {
         alert("First Name must be required")
+        document.getElementById("fname").focus();
         return false;
     }
     else if (lname == "") {
         alert("Last Name must be required")
+        document.getElementById("lname").focus();
         return false;
     }
     else if (email == "") {
         alert("email must be required")
+        document.getElementById("Email").focus();
         return false;
     }
     else if (mobile == "") {
         alert("mobile must be required")
+        document.getElementById("imobile").focus();
         return false;
     }
     else if (gender == "") {
         alert("gender must be required")
+        document.getElementById("gender").focus();
         return false;
     }
     else if (dob == "") {
         alert("dob must be required")
+        document.getElementById("dob").focus();
         return false;
     }
     else if (address == "") {
         alert("address must be required")
+        document.getElementById("address").focus();
         return false;
     }
     else if (city == "") {
         alert("city must be required")
+        document.getElementById("city").focus();
         return false;
     }
     else if (area == "") {
         alert("area pin must be required")
+        document.getElementById("area").focus();
         return false;
     }
     else if (state == "") {
         alert("state must be required")
+        document.getElementById("state").focus();
         return false;
     }
     else if (qu == "") {
         alert("qualification must be required")
+        document.getElementById("qualification").focus();
         return false;
     }
     else if (result == "") {
         alert("checkbox must be required")
+        document.getElementById("specialization").focus();
         return false;
     }
     else if (pass == "") {
         alert("password must be required")
+        document.getElementById("password").focus();
         return false;
     }
 
     else {
-        alert("All entry successfully entered")
+        // alert("All entry successfully entered")
+        if (!name.test(fname)) {
+            alert("please enter valid name")
+            document.getElementById("fname").focus();
+        }
+        else {
+            alert("YOUR NAME IS VALID")
+        }
     }
 }
