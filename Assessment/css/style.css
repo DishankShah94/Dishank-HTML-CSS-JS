@@ -131,23 +131,18 @@ h1 {
     padding: 0 10px;
 }
 
-.specialization {
+.specialization{
     padding: 0 10px;
-
 }
-
-.spe {
-    margin-left: 119px;
-}
-
-/* #it{
+#it{
     margin-left: 119px; 
  }
  #ca{
      margin-left: 119px; 
  }
  #tc{
- } */
+     margin-left: 119px;
+ }
 .password {
     padding: 0 10px;
 }

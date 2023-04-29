@@ -13,8 +13,9 @@ function registration() {
     var qu = select.options[select.selectedIndex].value;
     var spe = document.getElementsByName('specialization');
     var result = "";
-    var name = /^([a-zA-Z])+$/;
     var pass = document.forms["reg"]["password"].value;
+    var name = /^([a-zA-Z]{3,6})$/;
+    var telm = /^\d{10}$/;
     for (var i = 0; i < spe.length; i++) {
         if (spe[i].checked) {
             result += spe[i].value;
@@ -22,6 +23,7 @@ function registration() {
     }
 
     if (fname == "") {
+
         alert("First Name must be required")
         document.getElementById("fname").focus();
         return false;
@@ -78,7 +80,7 @@ function registration() {
     }
     else if (result == "") {
         alert("checkbox must be required")
-        document.getElementById("specialization").focus();
+        document.getElementById("cs").focus();
         return false;
     }
     else if (pass == "") {
@@ -92,9 +94,30 @@ function registration() {
         if (!name.test(fname)) {
             alert("please enter valid name")
             document.getElementById("fname").focus();
+            return false;
         }
         else {
             alert("YOUR NAME IS VALID")
+
+        }
+        if (mobile.length != 10) {
+            alert("Please enter 10 digit only")
+            document.getElementById("imobile").focus();
+            return false;
+        }
+        else {
+            if (mobile.match(telm)) {
+                alert("mobile number valid")
+
+                // console.log("called")
+            }
+            else {
+                alert("wrong format mobile")
+                document.getElementById("imobile").focus();
+                return false;
+                // console.log("called")
+
+            }
         }
     }
 }

@@ -69,13 +69,13 @@
             </div>
             <div class="form_wrap">
                 <label for="" class="specialization">Specialization:</label>
-                <input type="checkbox" name="specialization" value="CS" id="specialization">
+                <input type="checkbox" name="specialization" value="CS" id="cs">
                 <label for="cs">Computer Science</label><br>
-                <input type="checkbox" class="spe" name="specialization" value="IT">
+                <input type="checkbox" name="specialization" value="IT" id="it">
                 <label for="it">Information Technology</label><br>
-                <input type="checkbox" class="spe" name="specialization" value="CA">
+                <input type="checkbox" name="specialization" value="CA" id="ca">
                 <label for="ca">Computer Architecture</label><br>
-                <input type="checkbox" class="spe" name="specialization" value="TC">
+                <input type="checkbox" name="specialization" id="tc" value="TC">
                 <label for="tc">Tele Communication</label>
             </div>
             <div class="form_wrap">
@@ -83,7 +83,7 @@
                 <input type="password" name="password" placeholder="Password" class="ipassword" id="password">
             </div>
             <div class="form_wrap">
-                <input type="submit" value="Submit" class="register">
+                <input type="submit" onsubmit="event.preventDefault()" value="Submit" class="register">
             </div>
         </form>
     </div>
