@@ -23,7 +23,6 @@ function registration() {
     }
 
     if (fname == "") {
-
         alert("First Name must be required")
         document.getElementById("fname").focus();
         return false;
@@ -97,8 +96,7 @@ function registration() {
             return false;
         }
         else {
-            alert("YOUR NAME IS VALID")
-
+            // alert("YOUR NAME IS VALID")
         }
         if (mobile.length != 10) {
             alert("Please enter 10 digit only")
@@ -107,16 +105,12 @@ function registration() {
         }
         else {
             if (mobile.match(telm)) {
-                alert("mobile number valid")
-
-                // console.log("called")
+                // alert("mobile number valid")
             }
             else {
                 alert("wrong format mobile")
                 document.getElementById("imobile").focus();
                 return false;
-                // console.log("called")
-
             }
         }
     }
