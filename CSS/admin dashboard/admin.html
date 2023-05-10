@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="admin.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Arvo&family=Baloo+Bhai+2&family=Cookie&family=Cormorant+Garamond:ital@1&family=Lato:wght@300;400&family=Montserrat&family=Open+Sans&family=Proza+Libre&family=Raleway:ital,wght@0,200;0,300;0,400;1,100&family=Roboto:wght@300;400&family=Rubik&family=Ubuntu&display=swap"
+        rel="stylesheet" />
+</head>
+
+<body>
+    <section class="section1">
+        <div class="container">
+            <div class="row">
+                <div class="col-30">
+                    <div class="sec1_box">
+
+                        <div class="align">
+                            <img src="images/_Clip Group_.png" alt="">
+                            <div class="name">
+                                <h2>Dishank Shah</h2>
+                                <p>Lorem, ipsum dolor.</p>
+                            </div>
+
+                            <div class="dashboard">
+                                <a href="#"><img src="images/dashboard.png" alt="">
+                                    <h2>Home</h2>
+                                </a>
+                            </div>
+                            <div class="dashboard">
+                                <a href="#"><img src="images/Notification.png" alt="">
+                                    <h2>Notification</h2>
+                                </a>
+                            </div>
+                            <div class="dashboard">
+                                <a href="#"><img src="images/Setting.png" alt="">
+                                    <h2>Setting</h2>
+                                </a>
+                            </div>
+                            <div class="dashboard">
+                                <a href="#"><img src="images/chat.png" alt="">
+                                    <h2>Chat</h2>
+                                </a>
+                            </div>
+                            <div class="dashboard">
+                                <a href="#"><img src="images/message.png" alt="">
+                                    <h2>Message</h2>
+                                </a>
+                            </div>
+                            <div class="dashboard">
+                                <a href="#"><img src="images/bookmark.png" alt="">
+                                    <h2>Bookmark</h2>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-60">
+                    <div class="sec1_box_60">
+                        <div class="search">
+                            <input type="search" name="" placeholder="SEARCH" id="search">
+                        </div>
+                        <div class="row">
+                            <div class="col-33">
+                                <div class="card">
+                                    <div class="box1">
+                                        <h3>consectetur</h3>
+                                        <p>Lorem Ipsum Dolor Sit Amet</p>
+                                    </div>
+                                    <div id="piechart"></div>
+                                </div>
+                            </div>
+                            <div class="col-33">
+                                <div class="card">
+                                    <div class="box1">
+                                        <h3>consectetur</h3>
+                                        <p>Lorem Ipsum Dolor Sit Amet</p>
+                                    </div>
+                                    <div id="piechart1"></div>
+                                </div>
+                            </div>
+                            <div class="col-33">
+                                <div class="card">
+                                    <div class="box1">
+                                        <h3>consectetur</h3>
+                                        <p>Lorem Ipsum Dolor Sit Amet</p>
+                                    </div>
+                                    <div id="piechart2"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-50">
+                               <div class="sec2_box">
+                                    <h2>nullam act leo</h2>
+                                    <p>Lorem ipsum dolor sit amet</p>
+                               </div> 
+                               <div id="chart_lines"></div>
+                            </div>
+                            <div class="col-50">
+                                <div id="barchart_material"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+        google.charts.load('current', { 'packages': ['corechart'] });
+        google.charts.setOnLoadCallback(drawChart);
+
+        function drawChart() {
+
+            var data = google.visualization.arrayToDataTable([
+                ['Task', 'Hours per Day'],
+                ['Work', 11],
+                ['Eat', 2],
+                ['Commute', 2],
+                ['Watch TV', 2],
+                ['Sleep', 7]
+            ]);
+
+            var options = {
+                title: 'My Daily Activities'
+            };
+
+            var chart = new google.visualization.PieChart(document.getElementById('piechart1'));
+
+            chart.draw(data, options);
+        }
+    </script>
+    <script type="text/javascript">
+        google.charts.load('current', { 'packages': ['corechart'] });
+        google.charts.setOnLoadCallback(drawChart);
+
+        function drawChart() {
+
+            var data = google.visualization.arrayToDataTable([
+                ['Task', 'Hours per Day'],
+                ['Work', 11],
+                ['Eat', 2],
+                ['Commute', 2],
+                ['Watch TV', 2],
+                ['Sleep', 7]
+            ]);
+
+            var options = {
+                title: 'My Daily Activities'
+            };
+
+            var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+
+            chart.draw(data, options);
+        }
+    </script>
+    <script type="text/javascript">
+        google.charts.load('current', { 'packages': ['corechart'] });
+        google.charts.setOnLoadCallback(drawChart);
+
+        function drawChart() {
+
+            var data = google.visualization.arrayToDataTable([
+                ['Task', 'Hours per Day'],
+                ['Work', 11],
+                ['Eat', 2],
+                ['Commute', 2],
+                ['Watch TV', 2],
+                ['Sleep', 7]
+            ]);
+
+            var options = {
+                title: 'My Daily Activities'
+            };
+
+            var chart = new google.visualization.PieChart(document.getElementById('piechart2'));
+
+            chart.draw(data, options);
+        }
+    </script>
+  <script type="text/javascript">
+    google.charts.load('current', {'packages':['corechart']});
+    google.charts.setOnLoadCallback(drawChart);
+
+    function drawChart() {
+      var data = new google.visualization.DataTable();
+      data.addColumn('number', 'x');
+      data.addColumn('number', 'values');
+      data.addColumn({id:'i0', type:'number', role:'interval'});
+      data.addColumn({id:'i1', type:'number', role:'interval'});
+      data.addColumn({id:'i2', type:'number', role:'interval'});
+      data.addColumn({id:'i2', type:'number', role:'interval'});
+      data.addColumn({id:'i2', type:'number', role:'interval'});
+      data.addColumn({id:'i2', type:'number', role:'interval'});
+
+      data.addRows([
+          [1, 100, 90, 110, 85, 96, 104, 120],
+          [2, 120, 95, 130, 90, 113, 124, 140],
+          [3, 130, 105, 140, 100, 117, 133, 139],
+          [4, 90, 85, 95, 85, 88, 92, 95],
+          [5, 70, 74, 63, 67, 69, 70, 72],
+          [6, 30, 39, 22, 21, 28, 34, 40],
+          [7, 80, 77, 83, 70, 77, 85, 90],
+          [8, 100, 90, 110, 85, 95, 102, 110]]);
+
+      // The intervals data as narrow lines (useful for showing raw source data)
+      var options_lines = {
+          title: 'Line intervals, default',
+          curveType: 'function',
+          lineWidth: 4,
+          intervals: { 'style':'line' },
+          legend: 'none'
+      };
+
+      var chart_lines = new google.visualization.LineChart(document.getElementById('chart_lines'));
+      chart_lines.draw(data, options_lines);
+    }
+  </script>
+  <script type="text/javascript">
+    google.charts.load('current', {'packages':['bar']});
+    google.charts.setOnLoadCallback(drawChart);
+
+    function drawChart() {
+      var data = google.visualization.arrayToDataTable([
+        ['Year', 'Sales', 'Expenses', 'Profit'],
+        ['2014', 1000, 400, 200],
+        ['2015', 1170, 460, 250],
+        ['2016', 660, 1120, 300],
+        ['2017', 1030, 540, 350]
+      ]);
+
+      var options = {
+        chart: {
+          title: 'Company Performance',
+          subtitle: 'Sales, Expenses, and Profit: 2014-2017',
+        },
+        bars: 'horizontal' // Required for Material Bar Charts.
+      };
+
+      var chart = new google.charts.Bar(document.getElementById('barchart_material'));
+
+      chart.draw(data, google.charts.Bar.convertOptions(options));
+    }
+  </script>
+</body>
+
+</html>
