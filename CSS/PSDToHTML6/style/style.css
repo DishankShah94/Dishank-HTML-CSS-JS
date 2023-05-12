@@ -320,9 +320,11 @@ hr {
     background-color: yellow;
     margin: 25px 50px;
 }
-.sec4_pad{
+
+.sec4_pad {
     padding: 60px 0;
 }
+
 .menu p {
     font-size: 1.4rem;
     letter-spacing: 2px;
@@ -331,17 +333,21 @@ hr {
     font-family: 'Arvo', serif;
     margin: 20px 50px;
 }
-.dolor i{
+
+.dolor i {
     color: white;
     margin: 25px 50px;
 }
-.dolor .rup{
+
+.dolor .rup {
     color: yellow;
     margin: 0 10px;
 }
-.jsc{
+
+.jsc {
     justify-content: space-between;
 }
+
 .sec4_btn {
     padding: 30px 0;
 }
@@ -358,18 +364,22 @@ hr {
     display: block;
     margin: 0 auto;
 }
-.sec4_abs{
+
+.sec4_abs {
     position: absolute;
 }
 
-.abs_sec4{
+.abs_sec4 {
     bottom: 0;
     right: -437px;
     top: -134px;
 }
-.section3, .section4{
+
+.section3,
+.section4 {
     overflow-x: clip;
 }
+
 .section5 {
     background-image: url(../images/background2.png);
     background-size: cover;
@@ -382,6 +392,7 @@ hr {
     /* height: 100vh; */
     background-color: #20202282;
 }
+
 .sec5_h1 h1 {
     font-size: 4rem;
     text-transform: uppercase;
@@ -408,6 +419,7 @@ hr {
 .sec5_btn {
     padding: 60px 0;
 }
+
 .sec5_btn button {
     width: 10%;
     padding: 5px;
@@ -419,15 +431,134 @@ hr {
     display: block;
     margin: 0 auto;
 }
-.section6{
+
+.section6 {
     background-color: #202022;
     background-size: cover;
 }
-.sec6_back{
+
+.sec6_back {
     background-image: url(../images/back_sec6.png);
     background-size: contain;
     background-repeat: no-repeat;
 }
-.sec6_img img{
+
+.sec6_img img {
     margin: 80px 30px;
 }
+
+.sec6_h1 {
+    width: 50%;
+}
+
+.sec6_h1 h1 {
+    margin-top: 308px;
+    font-size: 3rem;
+    margin-left: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: white;
+    font-weight: 700;
+    font-style: italic;
+    font-family: 'Arvo', serif;
+}
+
+.sec6_h3 h3 {
+    font-size: 2rem;
+    text-transform: uppercase;
+    color: red;
+    font-weight: 700;
+    font-style: italic;
+    font-family: 'Arvo', serif;
+    padding: 50px 0;
+    margin-left: 20px;
+}
+
+.sec6_p {
+    width: 70%;
+}
+
+.sec6_p p {
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+    line-height: 42px;
+    color: #fbfbf5;
+    font-weight: 600;
+    font-family: 'Arvo', serif;
+    margin: 30px 20px;
+}
+
+.section7 {
+    background-color: #202022;
+    background-size: cover;
+}
+
+.sec7_bac {
+    background-image: url(../images/sec7_bac.png);
+    background-repeat: no-repeat;
+    background-size: 800px;
+    background-position-x: center;
+    /* padding: 10px 0; */
+}
+
+.sec7_btn {
+    padding: 30px 0;
+}
+
+.sec7_btn button {
+    width: 10%;
+    padding: 5px;
+    font-size: 1.0rem;
+    letter-spacing: 2px;
+    background-color: red;
+    font-weight: 500;
+    color: #202022;
+    border-radius: 42px;
+    display: block;
+    margin: 0 auto;
+}
+
+.hr1 {
+    width: 75%;
+    padding: 1px;
+    background-color: red;
+    margin: 25px 50px;
+}
+
+.section8 {
+    background-color: #202022;
+    background-size: cover;
+}
+
+.sec8_h1 {
+    width: 30%;
+}
+
+.sec8_h1 h1 {
+    font-size: 3rem;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #fbfbf5;
+    font-weight: 700;
+    font-style: italic;
+    font-family: 'Arvo', serif;
+    padding: 70px 0;
+}
+.sec8_date h2{
+    font-size: 2.5rem;
+    letter-spacing: 1px;
+    color: #ffcd08;
+    font-weight: 700;
+    font-style: italic;
+    font-family: 'Arvo', serif;
+    
+}
+.sec8_rel{
+    position: relative;
+    bottom: 408px;
+    left: 1002px;
+}
+/* .offer{
+    width: 20%;
+
+} */
