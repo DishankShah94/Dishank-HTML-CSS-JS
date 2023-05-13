@@ -554,11 +554,28 @@ hr {
     
 }
 .sec8_rel{
-    position: relative;
-    bottom: 408px;
-    left: 1002px;
+    right: 0px;
+    z-index: 1;
 }
-/* .offer{
+.offer{
+    position: absolute;
     width: 20%;
 
-} */
+}
+.wave_generator{
+    position: relative;
+}
+.section9{
+    background-image: url(../images/sec9_bac.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.sec9_h3 h3{
+    font-size: 2.5rem;
+    font-weight: 600;
+    font-style: italic;   
+    text-align: center;
+    color: white;
+    text-transform: uppercase;
+    padding: 50px 0;
+}
