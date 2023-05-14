@@ -544,38 +544,132 @@ hr {
     font-family: 'Arvo', serif;
     padding: 70px 0;
 }
-.sec8_date h2{
+
+.sec8_date h2 {
     font-size: 2.5rem;
     letter-spacing: 1px;
     color: #ffcd08;
     font-weight: 700;
     font-style: italic;
     font-family: 'Arvo', serif;
-    
+
 }
-.sec8_rel{
+
+.sec8_rel {
     right: 0px;
     z-index: 1;
 }
-.offer{
+
+.offer {
     position: absolute;
     width: 20%;
 
 }
-.wave_generator{
+
+.wave_generator {
     position: relative;
 }
-.section9{
+
+.section9 {
     background-image: url(../images/sec9_bac.png);
     background-repeat: no-repeat;
     background-size: cover;
 }
-.sec9_h3 h3{
+
+.sec9_h3 h3 {
     font-size: 2.5rem;
     font-weight: 600;
-    font-style: italic;   
+    font-style: italic;
     text-align: center;
     color: white;
     text-transform: uppercase;
+    font-family: 'Arvo', serif;
     padding: 50px 0;
+}
+
+.bac_sec9 {
+    background-image: url(../images/bac_sec9.png);
+    background-repeat: no-repeat;
+    background-size: 1000px;
+    background-position-x: center;
+}
+
+.bac_sec9 h1 {
+    font-size: 3.5rem;
+    letter-spacing: 3px;
+    text-align: center;
+    text-transform: uppercase;
+    color: yellow;
+    font-weight: 700;
+    font-family: 'Arvo', serif;
+    font-style: italic;
+}
+
+footer {
+    background-color: #202022;
+    background-size: cover;
+}
+
+.fo_bac {
+    background-image: url(../images/footer_bac.png);
+    background-repeat: no-repeat;
+    background-size: 1250px;
+    padding: 60px 0;
+}
+
+.fo_about h2 {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    color: white;
+    font-weight: 600;
+    font-family: 'Arvo', serif;
+    padding: 50px 0;
+    margin: 10px 50px;
+}
+
+.fo_p {
+    width: 79%;
+}
+
+.fo_p p {
+    font-size: 1.1rem;
+    color: white;
+    font-weight: 400;
+    font-family: 'Arvo', serif;
+    margin: 10px 50px;
+}
+
+.fo_img img {
+    margin: 10px 50px;
+}
+
+.col-15 {
+    width: 15%;
+}
+
+.fo_mar {
+    margin-top: 160px;
+    margin-left: 100px;
+}
+
+.fo_about1 h2 {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    color: white;
+    font-weight: 600;
+    font-family: 'Arvo', serif;
+    margin: 15px 0;
+}
+
+.fo_menu li a {
+    text-decoration: none;
+    font-size: 0.9rem;
+    color: white;
+    font-weight: 600;
+    font-family: 'Arvo', serif;
+}
+
+.fo_menu li {
+    list-style: none;
+    margin: 10px 0;
 }
