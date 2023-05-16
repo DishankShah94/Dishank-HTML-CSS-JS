@@ -1,0 +1,8 @@
+.bg_img-set{
+    background-image: url(../images/bgh1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.bg-theme-clr{
+    background-color: #5381c199;    
+}
