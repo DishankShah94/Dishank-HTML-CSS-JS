@@ -1,8 +1,57 @@
-.bg_img-set{
+.bg_img-set {
     background-image: url(../images/bgh1.png);
     background-repeat: no-repeat;
     background-size: cover;
 }
-.bg-theme-clr{
-    background-color: #5381c199;    
+
+.bg-theme-clr {
+    background-color: #5381c199;
+}
+
+.bgtheme {
+    background-color: #5381c1d0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.btn-order {
+    width: 15%;
+    border-radius: 42px;
+}
+
+.section1 {
+    background-color: #739ee3;
+}
+
+.img1 {
+    /* display: inline-block; */
+    right: -150px !important;
+    top: -100px;
+    z-index: -1;
+}
+
+.img2 {
+    left: -150px !important;
+    top: -100px;
+    z-index: -1;
+}
+
+.img3 {
+    left: 50px !important;
+    top: 30px;
+}
+
+.header,
+.section1 {
+    overflow-x: clip;
+}
+
+.pos-rel {
+    z-index: -1;
+}
+
+.sec_h h1 {
+    font-family: 'Poppins', sans-serif;
 }
