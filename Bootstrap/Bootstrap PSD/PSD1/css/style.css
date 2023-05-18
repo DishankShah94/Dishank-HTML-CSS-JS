@@ -12,14 +12,6 @@
     background-color: #5381c1d0;
 }
 
-body {
-    font-family: 'Poppins', sans-serif;
-}
-
-.btn-order {
-    width: 15%;
-    border-radius: 42px;
-}
 
 .section1 {
     background-color: #739ee3;
@@ -54,4 +46,34 @@ body {
 
 .sec_h h1 {
     font-family: 'Poppins', sans-serif;
+}
+
+.sec1_p_1 p {
+    font-family: 'Poppins', sans-serif;
+}
+
+.section2 {
+    background-image: url(../images/sec2bac.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.sec2_bg_color {
+    background-color: #edc21581;
+}
+
+.sec2_h1 h1 {
+    font-family: 'Poppins', sans-serif;
+}
+
+.sec2_pad {
+    padding: 90px 0;
+}
+
+.section3 {
+    background-color: #739ee3;
+}
+
+.sec3_back_color {
+    background-color: #5380c1;
 }
