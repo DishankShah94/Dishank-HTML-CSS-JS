@@ -77,3 +77,34 @@
 .sec3_back_color {
     background-color: #5380c1;
 }
+
+.sec3_h1 h1 {
+    font-family: 'Poppins', sans-serif;
+}
+
+.sec3_p p {
+    font-family: 'Poppins', sans-serif;
+}
+
+.abs-pos {
+    right: 87px !important;
+    top: 50px;
+}
+
+.img_sec3 {
+    margin: 150px 0 !important;
+}
+
+.section4 {
+    background-color: #739ee3;
+}
+
+.sec3_pos {
+    right: 148px !important;
+    top: 109px !important;
+}
+
+.sec4_pad {
+    margin: 140px 0;
+    padding: 80px 0;
+}
