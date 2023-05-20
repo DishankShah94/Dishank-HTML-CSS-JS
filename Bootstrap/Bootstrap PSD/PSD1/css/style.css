@@ -23,14 +23,12 @@
     top: -100px;
     z-index: -1;
 }
-
-.img2 {
-    left: -150px !important;
-    top: -100px;
+.img2{
+    left:-150px !important;
+    top:-100px;
     z-index: -1;
 }
-
-.img3 {
+.img3{
     left: 50px !important;
     top: 30px;
 }
@@ -39,72 +37,90 @@
 .section1 {
     overflow-x: clip;
 }
-
-.pos-rel {
+.pos-rel{
     z-index: -1;
 }
-
-.sec_h h1 {
+.sec_h h1{
     font-family: 'Poppins', sans-serif;
 }
-
-.sec1_p_1 p {
+.sec1_p_1 p{
     font-family: 'Poppins', sans-serif;
 }
-
-.section2 {
+.section2{
     background-image: url(../images/sec2bac.png);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: cover;   
 }
-
-.sec2_bg_color {
-    background-color: #edc21581;
+.sec2_bg_color{
+    background-color: #edc21581;   
 }
-
-.sec2_h1 h1 {
+.sec2_h1 h1{
     font-family: 'Poppins', sans-serif;
 }
-
-.sec2_pad {
+.sec2_pad{
     padding: 90px 0;
 }
-
-.section3 {
+.section3{
     background-color: #739ee3;
 }
-
-.sec3_back_color {
+.sec3_back_color{
     background-color: #5380c1;
 }
-
-.sec3_h1 h1 {
+.sec3_h1 h1{
+    font-family: 'Poppins', sans-serif;   
+}
+.sec3_p p{
     font-family: 'Poppins', sans-serif;
 }
-
-.sec3_p p {
-    font-family: 'Poppins', sans-serif;
-}
-
-.abs-pos {
+.abs-pos{
     right: 87px !important;
     top: 50px;
 }
-
-.img_sec3 {
+.img_sec3{
     margin: 150px 0 !important;
 }
-
-.section4 {
+.section4{
     background-color: #739ee3;
 }
-
-.sec3_pos {
+.sec3_pos{
     right: 148px !important;
     top: 109px !important;
 }
-
-.sec4_pad {
+.sec4_pad{
     margin: 140px 0;
     padding: 80px 0;
+}
+.section5{
+    background-color: #739ee3;
+}
+.bg-sec5-color{
+    background-color: #5380c1;
+}
+.sec5_h1{
+    font-family: 'Poppins', sans-serif;
+}
+.sec5_p{
+    font-family: 'Poppins', sans-serif;
+}
+.section6{
+    background-color: #739ee3;
+}
+.section6{
+    overflow-x: clip;
+}
+.sec6_img{
+    right:-10px !important;
+}
+.sec6_img1{
+    /* z-index: -1 !important; */
+    right: -250px !important;
+    bottom: -250px !important;
+}
+.section7{
+    background-image: url(../images/sec7bac.png);
+    background-repeat: no-repeat;
+    background-size: cover;   
+}
+.bg7col{
+    background-color: #edc21594;
 }
