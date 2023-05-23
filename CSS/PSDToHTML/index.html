@@ -36,7 +36,7 @@
                         </nav>
                     </div>
                     <button class="bar">
-                        <i class="fa fa-2x fa-bars"></i>
+                        <i class="fa fa-2x fa-bars" onclick="togglemenu()"></i>
                     </button>
                 </div>
             </div>
@@ -385,7 +385,14 @@
                 </div>
             </div>
         </footer>
-
+        <script src="https://code.jquery.com/jquery-3.7.0.min.js"
+            integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+        <script>
+            function togglemenu(){
+                // console.log("called");
+                $(".menu-right").toggleClass("dips-b-mobile")
+            }
+        </script>
 
 </body>
 

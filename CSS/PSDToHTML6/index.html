@@ -26,22 +26,30 @@
                     <nav>
                         <ul class="nav-bar">
                             <li><img src="images/logo.png" alt=""></li>
+                            <!-- <i class="fa-solid fa-bars"></i> -->
                         </ul>
+
                     </nav>
                 </div>
-                <div class="m1-l">
+                <div class="ml-l">
                     <nav>
                         <ul class="nav-bar">
                             <li><a href="index.html">Home</a></li>
                             <li><a href="index.html">Menu</a></li>
                             <li><a href="index.html">Delivery</a></li>
                             <li><a href="index.html">Location</a></li>
-                            <li><a href="index.html">Contact</a></li>
-                            <li><input type="text" name="" class="search" id=""><img src="images/Search.png"
-                                    class="hea_pos pos_hea" alt=""></li>
+                            <li><a href="index.html">Conta.tct</a></li>
+                            <li><input type="text" name="" class="search" id="">
+                                <!-- <i class="fa-solid fa-bars"></i> -->
+                                <!-- <img src="images/Search.png"
+                                    class="hea_pos pos_hea" alt=""> -->
+                            </li>
                         </ul>
                     </nav>
                 </div>
+                <button class="bar">
+                    <i class="fa fa-2x fa-bars" onclick="togglemenu()"></i>
+                </button>
             </div>
             <div class="title">
                 <h1 class="h1">YOUR FAVOURITE</h1>
@@ -464,5 +472,14 @@
             </div>
         </div>
     </footer>
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"
+    integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+    <script>
+        function togglemenu(){
+            $(".ml-l").toggleClass("mb-mobile")
+        }
+    </script>
 </body>
+
+
 </html>

@@ -215,7 +215,7 @@ body {
 .sec2_back_color {
     background-color: white;
     padding: 40px 10px;
-    height: 125vh;
+    height: 1vh;
 }
 
 .sec2_h2 {
@@ -383,13 +383,14 @@ body {
 }
 
 .get_voucher {
-    width: 100%;
-    padding: 20px 20px;
+
+    width: 118%;
+    padding: 10px 10px;
     border-radius: 49px;
     display: block;
     margin: 0 auto;
     text-transform: uppercase;
-    font-size: 1.5rem;
+    font-size: 1.0rem;
     letter-spacing: 4px;
     text-align: center;
     font-family: 'Ubuntu', sans-serif;
@@ -616,7 +617,11 @@ body {
 .rel2_pos2 img {
     display: none;
 } */
-
+.sec2_back_color {
+    background-color: white;
+    padding: 40px 10px;
+    height: 170vh;
+}
 
 @media (min-width: 576px) {
     .container {
@@ -638,6 +643,8 @@ body {
     .col_50 {
         width: 100%;
     }
+
+
 
     /* .sec2_back_color {
         background-color: white;
@@ -708,8 +715,8 @@ body {
     .shape1 img {
         display: block;
         position: absolute;
-        top: -861px;
-        left: 387px;
+        top: -1008px;
+        left: -393px;
     }
 
     .ml-l {
@@ -717,7 +724,7 @@ body {
     }
 
     .get_voucher {
-        width: 40%;
+        width: 60%;
         padding: 20px 20px;
         border-radius: 49px;
         display: block;
@@ -734,14 +741,18 @@ body {
     .shape2 img {
         display: block;
         position: absolute;
-        left: 950px;
-        bottom: 759px;
+        left: 266px;
+        bottom: 1016px;
     }
 
     .sec2_back_color {
         background-color: white;
         padding: 40px 10px;
         height: 100vh;
+    }
+
+    .sec2_back_color {
+        height: 125vh;
     }
 
     body {

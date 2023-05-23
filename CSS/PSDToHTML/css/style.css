@@ -874,9 +874,24 @@ section .main-p1 .main-p1-1 {
     /* visibility:hidden; */
 }
 
+.dips-b-mobile {
+    display: block;
+    position: absolute;
+    background-color: lightgray;
+    right: 0;
+}
+
+.dips-b-mobile .nav-bar li {
+    display: block;
+}
+
 @media (min-width: 576px) {
     .container {
         width: 540px;
+    }
+
+    html {
+        font-size: 70%;
     }
 
     .col-25 {
@@ -989,6 +1004,10 @@ section .main-p1 .main-p1-1 {
         width: 50%;
     }
 
+    html {
+        font-size: 80%;
+    }
+
     .col-33 {
         width: 50%;
     }
@@ -1054,6 +1073,10 @@ section .main-p1 .main-p1-1 {
         display: inline-block;
     }
 
+    html {
+        font-size: 80%;
+    }
+
     .col-25 {
         width: 25%;
     }
@@ -1090,7 +1113,7 @@ section .main-p1 .main-p1-1 {
         /* height: 100vh; */
         width: 100%;
         top: -67px;
-        display: block;
+        display: block
     }
 }
 
