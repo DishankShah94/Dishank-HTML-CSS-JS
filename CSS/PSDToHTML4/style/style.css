@@ -620,7 +620,7 @@ body {
 .sec2_back_color {
     background-color: white;
     padding: 40px 10px;
-    height: 170vh;
+    height: 280vh;
 }
 
 @media (min-width: 576px) {
@@ -719,6 +719,14 @@ body {
         left: -393px;
     }
 
+    .sec2_img {
+        height: 202vh;
+    }
+
+    .sec2_2_img {
+        height: 202vh;
+    }
+
     .ml-l {
         display: block;
     }
@@ -748,12 +756,12 @@ body {
     .sec2_back_color {
         background-color: white;
         padding: 40px 10px;
-        height: 100vh;
+        height: 202vh;
     }
 
-    .sec2_back_color {
+    /* .sec2_back_color {
         height: 125vh;
-    }
+    } */
 
     body {
         overflow-x: hidden;
