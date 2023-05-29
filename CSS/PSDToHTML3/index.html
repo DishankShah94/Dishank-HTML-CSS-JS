@@ -16,7 +16,8 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&family=Cookie&family=Lato:wght@300&family=Montserrat&family=Raleway:ital,wght@0,200;0,300;0,400;1,100&display=swap"
         rel="stylesheet">
-
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
 
 </head>
 
@@ -38,6 +39,9 @@
                     </ul>
                 </nav>
             </div>
+            <button class="bar">
+                <i class="fa fa-2x fa-bars" onclick="togglemenu()"></i>
+            </button>
         </div>
 
         <div class="title_padding">
@@ -333,6 +337,14 @@
             </div>
         </div>
     </footer>
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"
+        integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+    <script>
+        function togglemenu() {
+            // console.log("called");
+            $(".main-bg-right").toggleClass("dips-b-mobile")
+        }
+    </script>
     <!-- <footer>
         <div class="container">
             <div class="row">
