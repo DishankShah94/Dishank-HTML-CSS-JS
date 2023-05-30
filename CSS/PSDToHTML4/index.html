@@ -7,6 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
     <link
         href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&family=Cookie&family=Cormorant+Garamond:ital@1&family=Lato:wght@300&family=Montserrat&family=Proza+Libre&family=Raleway:ital,wght@0,200;0,300;0,400;1,100&family=Roboto:wght@300;400&family=Ubuntu&display=swap"
         rel="stylesheet">
@@ -37,7 +39,7 @@
                     </nav>
                 </div>
                 <button class="bar">
-                    <i class="fa fa-2x fa-bars"></i>
+                    <i class="fa fa-2x fa-bars" onclick="togglemenu()"></i>
                 </button>
             </div>
             <div class="h1_head">
@@ -137,7 +139,7 @@
         <div class="row">
             <div class="col_50">
                 <div class="sec2_back_color">
-       <div class="sec2_h2">
+                    <div class="sec2_h2">
                         <h2>Discount up to
                             50% All Menu</h2>
                     </div>
@@ -293,6 +295,14 @@
             </div>
         </div>
     </footer>
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"
+    integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+<script>
+    function togglemenu() {
+        // console.log("called");
+        $(".m1-l").toggleClass("dips-b-mobile")
+    }
+</script>
 </body>
 
 </html>
