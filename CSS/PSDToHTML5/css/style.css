@@ -14,19 +14,25 @@
 header {
     background-color: white;
     /* background-size: cover; */
-}
+}   
 
 .sticky {
     position: fixed;
     top: 0;
     left: 0;
-
 }
 
 .m1-l {
     margin-left: auto;
 }
-
+.bar {
+    display: block;
+    margin-left: auto;
+    padding: 0 20px;
+    background-color: transparent;
+    /* color: #fff; */
+    border: none;
+}
 .nav-bar li {
     display: inline-block;
     margin: 30px 10px;
@@ -624,7 +630,18 @@ footer {
 .col_33 {
     width: 100%;
 }
-
+.m1-l{
+    display: none;
+}
+.dips-b-mobile{
+    display: block;
+    position: absolute;
+    background-color: lightgray;
+    right: 0;
+}
+.dips-b-mobile .nav-bar li{
+    display: block;
+} 
 @media (min-width: 576px) {
     .container {
         width: 540px;
@@ -668,6 +685,12 @@ footer {
 @media (min-width:992px) {
     .container {
         width: 945px;
+    }
+    .m1-l{
+        display: block;
+    }
+    .bar{
+        display: none;
     }
 }
 
