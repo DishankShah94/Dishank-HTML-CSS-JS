@@ -1,0 +1,168 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: #080808;
+    color: #fff;
+}
+
+#header {
+    width: 100%;
+    height: 100vh;
+    background-image: url(../images/background_img.png);
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+.container {
+    width: 1350px;
+    margin: 0 auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.m1-l {
+    margin-left: auto;
+}
+
+.nav-bar li img {
+    width: 140px;
+}
+
+.hea-img img {
+    display: block;
+    margin: 0 auto;
+}
+
+.nav-bar li {
+    display: inline-block;
+    margin: 30px 10px;
+    padding: 10px 10px;
+}
+
+.nav-bar li a {
+    font-size: 18px;
+    text-decoration: none;
+    color: white;
+    position: relative;
+}
+
+.nav-bar li a::after {
+    content: '';
+    width: 0;
+    height: 3px;
+    background-color: red;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+
+.nav-bar li a:hover::after {
+    width: 100%;
+}
+
+.header-p {
+    margin-top: 5%;
+    font-size: 30px;
+}
+
+.header-p p {
+    font-size: 40px;
+    margin: 10px 0;
+}
+
+.header-p h1 {
+    font-size: 50px;
+    margin: 10px 0;
+}
+
+.header-p span {
+    color: red;
+}
+
+/* .header_h2 {
+    margin-top: 10%;
+    font-size: 30px;
+}
+.header_h2 p {
+    font-size: 60px;
+    margin: 20px 0;
+}
+
+.header_h2 h1 {
+    font-size: 60px;
+    margin-top: 20px 0;
+}
+
+.header_h2 span {
+    color: red;
+} */
+
+.col-50 {
+    width: 50%;
+}
+
+.sec_about h2 {
+    font-size: 3rem;
+    margin: 40px 20px;
+    font-weight: 600;
+}
+
+.sec1_img img {
+    padding: 5px 0;
+}
+
+.sec-text p {
+    font-size: 1.0rem;
+    margin: 20px 20px;
+    font-weight: 500;
+}
+
+.tab-title .tab-links {
+    margin: 10px 20px;
+    font-size: 1.0rem;
+    font-weight: 600;
+    cursor: pointer;
+    position: relative;
+}
+
+.tab-links::after {
+    content: '';
+    width: 0;
+    height: 3px;
+    background-color: red;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s;
+}
+
+.tab-links.active-link::after {
+    width: 50%;
+}
+
+.tab-contents ul li {
+    list-style: none;
+    margin: 10px 20px;
+}
+
+.tab-contents ul li span {
+    color: #ff004f;
+    font-size: 14px;
+}
+
+.tab-contents {
+    display: none;
+}
+
+.tab-contents.active-tab {
+    display: block;
+}

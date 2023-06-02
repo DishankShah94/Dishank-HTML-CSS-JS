@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style/style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Arvo&family=Baloo+Bhai+2&family=Cookie&family=Cormorant+Garamond:ital@1&family=Lato:wght@300;400&family=Montserrat&family=Open+Sans&family=Poppins&family=Proza+Libre&family=Raleway:ital,wght@0,200;0,300;0,400;1,100&family=Roboto:wght@300;400&family=Rubik&family=Ubuntu&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header id="header">
+        <div class="container">
+            <div class="row">
+                <div class="ml-r">
+                    <nav>
+                        <ul class="nav-bar">
+                            <li><img src="images/logo.png" alt=""></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="m1-l">
+                    <nav>
+                        <ul class="nav-bar">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Services</a></li>
+                            <li><a href="#">Portfolio</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <!-- <div class="row">
+                <div class="col-50">
+                    <div class="header_h2">
+                        <p>Front End Developer</p>
+                        <h1>Hi, I'm <span>Dishank </span><br>Shah</h1>
+                    </div>
+                </div>
+                <div class="col-50">
+                    <div class="hea-img">
+                        <img src="images/background_img.png" alt="">
+                    </div>
+                </div>
+            </div> -->
+            <!-- <div class="header_h2">
+                <p>Front End Developer</p>
+                <h1>Hi, I'm <span>Dishank </span><br>Shah</h1>
+            </div> -->
+            <div class="header-p">
+                <p>Front End Developer</p>
+                <h1>Hi, I'm <span>Dishank </span><br>Shah</h1>
+            </div>
+
+        </div>
+    </header>
+    <section class="section1">
+        <div class="container">
+            <div class="row">
+                <div class="col-50">
+                    <div class="sec1_img">
+                        <img src="images/background_img.png" alt="">
+                    </div>
+                </div>
+                <div class="col-50">
+                    <div class="sec_about">
+                        <h2>About Me</h2>
+                    </div>
+                    <div class="sec-text">
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Pariatur necessitatibus placeat aut
+                            eaque qui voluptates tempora at magni, blanditiis molestiae. Nisi assumenda temporibus,
+                            nulla quo magni provident harum culpa a?Lorem ipsum dolor, sit amet consectetur adipisicing
+                            elit. Quaerat excepturi sapiente animi veritatis, eligendi ipsum illum ratione quos, maxime
+                            temporibus, suscipit ea earum aut sunt molestiae omnis aspernatur cum quia? </p>
+                    </div>
+                    <div class="tab-title">
+                        <div class="row">
+                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab('education')">Education</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>HTML</span><br>HTML create structure of the website</li>
+                                <li><span>CSS</span><br>Designing website</li>
+                                <li><span>JavaScript</span><br>Create dynamic website</li>
+                                <li><span>jQuery</span><br>JavaScript library to help build the website functionality
+                                    easy.</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>12th</span><br>Swaminarayan Dham International School Per: 67.44%</li>
+                                <li><span>BCA</span><br>Bholabhai Patel College of Computer Studies Gandhinagar</li>
+                                <li><span>MSC Cyber Security</span><br>National Forensic Sciences University</li>
+                                <li><span>Front End Developer</span><br>TOPS Technology</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname) {
+            console.log("called");
+            for (tablink in tablinks) {
+
+                // tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+</body>
+
+</html>
