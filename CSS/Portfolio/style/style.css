@@ -19,7 +19,7 @@ body {
 }
 
 .container {
-    width: 1350px;
+    width: 1300px;
     margin: 0 auto;
 }
 
@@ -70,7 +70,7 @@ body {
 }
 
 .header-p {
-    margin-top: 5%;
+    margin-top: 3%;
     font-size: 30px;
 }
 
@@ -154,6 +154,7 @@ body {
     margin: 10px 20px;
 }
 
+
 .tab-contents ul li span {
     color: #ff004f;
     font-size: 14px;
@@ -165,4 +166,59 @@ body {
 
 .tab-contents.active-tab {
     display: block;
+}
+
+.col-30 {
+    width: 30%;
+}
+
+.sec_services h2 {
+    font-size: 3rem;
+    margin: 40px 20px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.services-list {
+    background-color: #262626;
+    /* background-size: cover; */
+    padding: 40px;
+    margin: 20px 0;
+    border-radius: 10px;
+    transition: background 0.5s, transform 0.5s;
+}
+
+.web-design h2 {
+    font-size: 30px;
+    /* margin-bottom: 15px; */
+    margin: 10px 10px;
+}
+
+.p_services p {
+    font-size: 1.0rem;
+    margin: 10px 10px;
+}
+
+.services-list i {
+    font-size: 40px;
+    /* color: white; */
+    margin: 10px 10px;
+}
+
+.learn-more a {
+    text-decoration: none;
+    font-size: 12px;
+    margin: 10px 10px;
+    font-weight: 500;
+    color: #fff;
+    cursor: pointer;
+}
+
+.js-c {
+    justify-content: space-between;
+}
+
+.services-list:hover {
+    background-color: red;
+    transform: translateY(-10px);
 }
