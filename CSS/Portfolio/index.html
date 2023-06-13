@@ -38,6 +38,9 @@
                         </ul>
                     </nav>
                 </div>
+                <button class="bar">
+                    <i class="fa fa-2x fa-bars" onclick="togglemenu()"></i>
+                </button>
             </div>
             <!-- <div class="row">
                 <div class="col-50">
@@ -256,6 +259,14 @@
             </div>
         </div>
     </section>
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"
+    integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+<script>
+    function togglemenu() {
+        // console.log("called");
+        $(".m1-l").toggleClass("dips-b-mobile")
+    }
+</script>
     <script>
         var tablinks = document.getElementsByClassName("tab-links");
         var tabcontents = document.getElementsByClassName("tab-contents");

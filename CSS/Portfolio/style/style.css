@@ -402,6 +402,26 @@ form textarea {
     display: none;
 }
 
+.bar {
+    display: block;
+    margin-left: auto;
+    /* padding: 0 20px; */
+    background-color: transparent;
+    color: #fff;
+    border: none;
+}
+
+.dips-b-mobile {
+    display: block;
+    position: absolute;
+    background-color: lightgray;
+    right: 0;
+}
+
+.dips-b-mobile .nav-bar li {
+    display: block;
+}
+
 @media (min-width: 576px) {
     .container {
         width: 540px;
@@ -455,6 +475,10 @@ form textarea {
 
     .col-50 {
         width: 50%;
+    }
+
+    .bar {
+        display: none;
     }
 
     .m1-l {
