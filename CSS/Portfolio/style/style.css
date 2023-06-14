@@ -402,10 +402,19 @@ form textarea {
     display: none;
 }
 
+.copywrite {
+    width: 100%;
+    text-align: center;
+    padding: 25px 0;
+    background-color: #262626;
+    font-weight: 600;
+    margin-top: 20px;
+}
+
 .bar {
     display: block;
     margin-left: auto;
-    /* padding: 0 20px; */
+    padding: 0 20px;
     background-color: transparent;
     color: #fff;
     border: none;
@@ -414,8 +423,8 @@ form textarea {
 .dips-b-mobile {
     display: block;
     position: absolute;
-    background-color: lightgray;
-    right: 0;
+    background-color: #ff004f;
+    left: 0;
 }
 
 .dips-b-mobile .nav-bar li {

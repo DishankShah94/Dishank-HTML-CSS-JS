@@ -27,7 +27,7 @@
                         </ul>
                     </nav>
                 </div>
-                <div class="m1-l">
+                <div class="m1-l" id="m1-l">
                     <nav>
                         <ul class="nav-bar">
                             <li><a href="#header">Home</a></li>
@@ -258,15 +258,20 @@
                 </div>
             </div>
         </div>
+        <div class="copywrite">
+            <p>Copywrite @ Dishank</p>
+        </div>
     </section>
     <script src="https://code.jquery.com/jquery-3.7.0.min.js"
-    integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
-<script>
-    function togglemenu() {
-        // console.log("called");
-        $(".m1-l").toggleClass("dips-b-mobile")
-    }
-</script>
+        integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+    <script>
+        let add = document.getElementById('m1-l');
+        function togglemenu() {
+            // console.log("called");
+            add.classList.toggle('dips-b-mobile');
+            // $(".m1-l").toggleClass("dips-b-mobile")
+        }
+    </script>
     <script>
         var tablinks = document.getElementsByClassName("tab-links");
         var tabcontents = document.getElementsByClassName("tab-contents");
