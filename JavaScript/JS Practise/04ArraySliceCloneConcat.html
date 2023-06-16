@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //slice starts from 0 index and till going to end to create a new array with different Address value
+        let array1 = ["item1", "item2"];
+        let array2 = array1.slice(0);
+        array1.unshift("item3");
+        console.log("Array1 data", array1);
+        console.log("Array2 data", array2);
+        //concat to create an array2 with the data of array1 but the address is different 
+        let arr1 = [1, 2, 4, 5];
+        let arr2 = [].concat(arr1);
+        arr1.push(3);
+        console.log("the value of arr1", arr1);
+        console.log("the value of arr2", arr2);
+        //spread operator= It is used to clone(copy) one array to another.
+        let mixarr1 = ["dishank", "siddhu", 10, 100, 2.0];
+        let mixarr2 = [...mixarr1, 1000, 10000];
+        console.log("the value of mixed arr1", mixarr1);
+        console.log("the value of mixed arr2", mixarr2);
+    </script>
+</body>
+
+</html>
