@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edu meeting</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/fontawesome.css">
+    <link rel="stylesheet" type="text/css" href="./css/slick.css">
+    <link rel="stylesheet" type="text/css" href="./css/slick-theme.css">
+    <style type="text/css">
+        .slider {
+            width: 70%;
+            margin: 60px auto;
+        }
+
+        .slick-slide {
+            margin: 0px 20px;
+        }
+
+
+        .slick-prev:before,
+        .slick-next:before {
+            color: white;
+        }
+
+
+        .slick-slide {
+            transition: all ease-in-out .3s;
+            opacity: .2;
+        }
+
+        .slick-active {
+            opacity: .5;
+        }
+
+        .slick-current {
+            opacity: 1;
+        }
+    </style>
+    <!-- <link rel="stylesheet" href="css/bootstrap.min.css"> -->
+</head>
+
+<body>
+    <div class="hea">
+        <div class="container">
+            <div class="row">
+                <div class="ml-l">
+                    <span>This is an educational <em>HTML CSS</em> template by TemplateMo website </span>
+                </div>
+                <div class="ml-r">
+                    <ul class="nav-bar">
+                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fa fa-behance"></i></a></li>
+                        <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <header id="header">
+        <video autoplay muted loop id="bg-video">
+            <source src="images/course-video.mp4" type="video/mp4">
+        </video>
+
+        <div class="left-nav">
+            <div class="container">
+                <div class="row">
+                    <div class="nav-r">
+                        <nav>
+                            <ul class="hea-bar">
+                                <li><a href="#">Edu Meeting</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="nav-l" id="nav-l">
+
+                        <nav>
+                            <ul class="hea-bar">
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="#">Meetings</a></li>
+                                <li><a href="#">Apply Now</a></li>
+                                <li><a href="#">Pages</a></li>
+                                <li><a href="#">Courses</a></li>
+                                <li><a href="#">Contact Us</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <button class="bar">
+                        <i class="fa fa-2x fa-bars" onclick="togglemenu()"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="pos-abs">
+            <div class="wid-100">
+                <div class="container">
+                    <div class="stu_h3">
+                        <h3>HELLO STUDENTS</h3>
+                    </div>
+                    <div class="stu_h4">
+                        <h4>Welcome to Education</h4>
+                    </div>
+                    <div class="stu_p">
+                        <p>This is an edu meeting HTML CSS template provided by <span>TemplateMo website</span>. This is
+                            a Bootstrap
+                            v5.1.3 layout. The video background is taken from Pexels website, a group of young people by
+                            <span>Pressmaster</span>.
+                        </p>
+                    </div>
+                    <div class="join_us">
+                        <a href="#">Join Us Now!</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="section1">
+        <div class="regular slider">
+            <div class="bg-slid">
+                <img src="images/service-icon-01.png" class="img1">
+                <div class="slide-h3">
+                    <h3>Best Education</h3>
+                </div>
+                <div class="slide-p">
+                    <p>Suspendisse tempor mauris a sem elementum bibendum. Praesent facilisis massa non vestibulum.</p>
+                </div>
+            </div>
+            <div class="bg-slid">
+                <img src="images/service-icon-03.png" class="img1">
+                <div class="slide-h3">
+                    <h3>Best Students</h3>
+                </div>
+                <div class="slide-p">
+                    <p>Suspendisse tempor mauris a sem elementum bibendum. Praesent facilisis massa non vestibulum.</p>
+                </div>
+            </div>
+            <div class="bg-slid">
+                <img src="images/service-icon-01.png" class="img1">
+                <div class="slide-h3">
+                    <h3>Best Teachers</h3>
+                </div>
+                <div class="slide-p">
+                    <p>Suspendisse tempor mauris a sem elementum bibendum. Praesent facilisis massa non vestibulum.</p>
+                </div>
+            </div>
+            <div class="bg-slid">
+                <img src="images/service-icon-02.png" class="img1">
+                <div class="slide-h3">
+                    <h3>Online Meeting</h3>
+                </div>
+                <div class="slide-p">
+                    <p>Suspendisse tempor mauris a sem elementum bibendum. Praesent facilisis massa non vestibulum.</p>
+                </div>
+            </div>
+            <div class="bg-slid">
+                <img src="images/service-icon-03.png" class="img1">
+                <div class="slide-h3">
+                    <h3>Best Networking</h3>
+                </div>
+                <div class="slide-p">
+                    <p>Suspendisse tempor mauris a sem elementum bibendum. Praesent facilisis massa non vestibulum.</p>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="meeting">
+                <h2>Upcoming Meetings</h2>
+            </div>
+            <hr>
+            <div class="card-grid">
+                <div class="card1">
+                    <div class="categories">
+                        <h4>Meeting Categories</h4>
+                    </div>
+                    <ul class="category-link">
+                        <li><a href="#">Sed tempus enim leo</a></li>
+                        <li><a href="#">Aenean molestle quis</a></li>
+                        <li><a href="#">Cras et metus vestibulum</a></li>
+                        <li><a href="#">Norm et condimentum</a></li>
+                        <li><a href="#">Phosellus nec sapien</a></li>
+                    </ul>
+                    <div class="border"></div>
+                    <div class="all-events">
+                        <a href="#">All Upcoming Meetings</a>
+                    </div>
+                </div>
+                <div class="card2">
+                    <div class="price">
+                        <span>$22.00</span>
+                    </div>
+                    <div class="down-content">
+                        <div class="date">
+                            <div class="ds-f">
+                                <h6>Now <span>10</span></h6>
+                                <div class="newlecture">
+                                    <h4>New Lecture Meeting</h4>
+                                    <p>Morbi in libero blandit lectus
+                                        cursus ullamcorper.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card3">
+                    <div class="price">
+                        <span>$36.00</span>
+                    </div>
+                    <div class="down-content">
+                        <div class="date">
+                            <div class="ds-f">
+                                <h6>Now <span>24</span></h6>
+                                <div class="newlecture">
+                                    <h4>Online Teaching Techniques</h4>
+                                    <p>Morbi in libero blandit lectus
+                                        cursus ullamcorper.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card3">
+                    <div class="price">
+                        <span>$36.00</span>
+                    </div>
+                    <div class="down-content">
+                        <div class="date">
+                            <div class="ds-f">
+                                <h6>Now <span>24</span></h6>
+                                <div class="newlecture">
+                                    <h4>Online Teaching Techniques</h4>
+                                    <p>Morbi in libero blandit lectus
+                                        cursus ullamcorper.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card4">
+                    <div class="price">
+                        <span>$14.00</span>
+                    </div>
+                    <div class="down-content">
+                        <div class="date">
+                            <div class="ds-f">
+                                <h6>Now <span>26</span></h6>
+                                <div class="newlecture">
+                                    <h4>Higher Education Conference</h4>
+                                    <p>Morbi in libero blandit lectus
+                                        cursus ullamcorper.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card5">
+                    <div class="price">
+                        <span>$48.00</span>
+                    </div>
+                    <div class="down-content">
+                        <div class="date">
+                            <div class="ds-f">
+                                <h6>Now <span>30</span></h6>
+                                <div class="newlecture">
+                                    <h4>Student Training Meetup</h4>
+                                    <p>Morbi in libero blandit lectus
+                                        cursus ullamcorper.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section2">
+        <div class="container">
+            <div class="row">
+                <div class="col-50">
+                    <div class="sec2_box">
+                        <div class="sec2_h3">
+                            <h3>Apply For Bachelor Degree</h3>
+                        </div>
+                        <div class="sec2_p">
+                            <p>You are allowed to use this edu meeting CSS template for your school or university or
+                                business. You can feel free to modify or edit this layout.
+                            </p>
+                        </div>
+                        <div class="join_us2">
+                            <a href="#">Join Us Now!</a>
+                        </div>
+                    </div>
+                    <div class="sec2_box">
+                        <div class="sec2_h3">
+                            <h3>Apply For Bachelor Degree</h3>
+                        </div>
+                        <div class="sec2_p">
+                            <p>You are allowed to use this edu meeting CSS template for your school or university or
+                                business. You can feel free to modify or edit this layout.
+                            </p>
+                        </div>
+                        <div class="join_us3">
+                            <a href="#">Join Us Now!</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-50">
+                    <div class="accordion-div pad-accodian">
+
+                        <button class="accordion">About Edu Meeting HTML Template</button>
+                        <div class="panel">
+                            <p>If you want to get the latest collection of HTML CSS templates for your websites, you may
+                                visit Too CSS website. If you need a working contact form script, please visit our
+                                contact page for more info.
+                            </p>
+                        </div>
+
+                        <button class="accordion">HTML CSS Bootstrap Layout</button>
+                        <div class="panel">
+                            <p>Etiam posuere metus orci, vel consectetur elit imperdiet eu. Cras ipsum magna, maximus at
+                                semper sit amet, eleifend eget neque. Nunc facilisis quam purus, sed vulputate augue
+                                interdum vitae. Aliquam a elit massa.
+                            </p>
+                            <br>
+                            <p>
+                                Nulla malesuada elit lacus, ac ultricies massa varius sed. Etiam eu metus eget nibh
+                                consequat aliquet. Proin fringilla, quam at euismod porttitor, odio odio tempus ligula,
+                                ut feugiat ex erat nec mauris. Donec viverra velit eget lectus sollicitudin tincidunt.
+                            </p>
+                        </div>
+
+                        <button class="accordion">Please tell your friends</button>
+                        <div class="panel">
+                            <p>Ut vehicula mauris est, sed sodales justo rhoncus eu. Morbi porttitor quam velit, at
+                                ullamcorper justo suscipit sit amet. Quisque at suscipit mi, non efficitur velit.
+                            </p>
+                            <br>
+                            <p>Cras et tortor semper, placerat eros sit amet, porta est. Mauris porttitor sapien et quam
+                                volutpat luctus. Nullam sodales ipsum ac neque ultricies varius.
+
+                            </p>
+                        </div>
+                        <button class="accordion">Share this to your colleagues</button>
+                        <div class="panel">
+                            <p>Maecenas suscipit enim libero, vel lobortis justo condimentum id. Interdum et malesuada
+                                fames ac ante ipsum primis in faucibus.
+                            </p>
+                            <br>
+                            <p>Sed eleifend metus sit amet magna tristique, posuere laoreet arcu semper. Nulla
+                                pellentesque ut tortor sit amet maximus. In eu libero ullamcorper, semper nisi quis,
+                                convallis nisi.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section3">
+        <div class="container">
+            <div class="sec3_hea">
+                <h2>Our Popular Courses</h2>
+            </div>
+            <div class="regular slider">
+                <div class="slide-bac">
+                    <div class="slide-img">
+                        <img src="images/course-01.jpg">
+                        <div class="slide-h4">
+                            <h4>Lorem ipsum, dolor sit amet consectetur adipisicing.</h4>
+                        </div>
+                        <hr class="hr">
+                        <div class="row">
+                            <div class="rating">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                            </div>
+                            <div class="course_price">
+                                <h3>$250</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide-bac">
+                    <div class="slide-img">
+                        <img src="images/course-02.jpg">
+                        <div class="slide-h4">
+                            <h4>Lorem ipsum, dolor sit amet consectetur adipisicing.</h4>
+                        </div>
+                        <hr class="hr">
+                        <div class="row">
+                            <div class="rating">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                            </div>
+                            <div class="course_price">
+                                <h3>$300</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide-bac">
+                    <div class="slide-img">
+                        <img src="images/course-03.jpg">
+                        <div class="slide-h4">
+                            <h4>Lorem ipsum, dolor sit amet consectetur adipisicing.</h4>
+                        </div>
+                        <hr class="hr">
+                        <div class="row">
+                            <div class="rating">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                            </div>
+                            <div class="course_price">
+                                <h3>$350</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide-bac">
+                    <div class="slide-img">
+                        <img src="images/course-04.jpg">
+                        <div class="slide-h4">
+                            <h4>Lorem ipsum, dolor sit amet consectetur adipisicing.</h4>
+                        </div>
+                        <hr class="hr">
+                        <div class="row">
+                            <div class="rating">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                            </div>
+                            <div class="course_price">
+                                <h3>$150</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section4">
+        <div class="container">
+            <div class="row">
+                <div class="col-25">
+                    <div class="sec4_h2">
+                        <h2>A Few Facts About Our University</h2>
+                    </div>
+                    <div class="contact-area">
+                        <div class="percent-text">
+                            <h2>94%</h2>
+                            <h5>Succesed Students</h5>
+                        </div>
+                    </div>
+                    <div class="sec4pad">
+                        <div class="contact-area">
+                            <div class="percent-text">
+                                <h2>126%</h2>
+                                <h5>Current Teachers</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-25">
+                    <div class="margsec4">
+
+                        <div class="contact-area">
+                            <div class="percent-text">
+                                <h2>2325</h2>
+                                <h5>New Students</h5>
+                            </div>
+                        </div>
+                        <div class="contact-area">
+                            <div class="percent-text">
+                                <h2>32</h2>
+                                <h5>Awards</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-50">
+                    <div class="sec4_bac">
+
+                        <a href="https://www.youtube.com/watch?v=HndV87XpkWg"><img src="images/video-item-bg.jpg"
+                                alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <div class="row js-c">
+                <div class="col-60">
+                    <div class="contact-form">
+                        <div class="contact_h2">
+                            <h2>Let's get in touch</h2>
+                        </div>
+                        <form action="">
+                            <input type="text" placeholder="YOURNAME...*" class="name" required>
+                            <input type="email" placeholder="YOUR EMAIL..." class="email" required>
+                            <input type="text" placeholder="SUBJECT...*" class="sub" required>
+                            <textarea name="message" type="text" id="message" placeholder="YOUR MESSAGE..."
+                                class="message" required></textarea>
+                            <button class="send_msg">Send Message Now</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-30">
+                    <div class="contact_info">
+                        <div class="phone">
+                            <h6>Phone Number</h6>
+                        </div>
+                        <div class="phone-number">
+                            <span>010-020-0340</span>
+                        </div>
+                        <div class="email-ad">
+                            <h6>Email Address</h6>
+                        </div>
+                        <div class="email-add">
+                            <span>info@meeting.edu</span>
+                        </div>
+                        <div class="address">
+                            <h6>Strret Address</h6>
+                        </div>
+                        <div class="saddress">
+                            <span>Rio de Janeiro - RJ, 22795-008, Brazil</span>
+                        </div>
+                        <div class="web">
+                            <h6>Website URL</h6>
+                        </div>
+                        <div class="weburl">
+                            <span>www.meeting.edu</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-border"></div>
+        <div class="container">
+            <div class="copyright">
+                <p>Copyright © 2022 Edu Meeting Co., Ltd. All Rights Reserved. <br> Design <span>TEMPLATEMO</span></p>
+            </div>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+    <script src="./css/slick.js" type="text/javascript" charset="utf-8"></script>
+    <script type="text/javascript">
+        $(document).on('ready', function () {
+            $(".regular").slick({
+                dots: true,
+                infinite: true,
+                slidesToShow: 3,
+                slidesToScroll: 1,
+                autoplay: true
+            });
+
+        });
+    </script>
+    <script>
+        let add = document.getElementById('nav-l');
+        function togglemenu() {
+            // console.log("called");
+            add.classList.toggle('dips-b-mobile');
+            // $(".m1-l").toggleClass("dips-b-mobile")
+        }   
+    </script>
+    <script>
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+
+        for (i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function () {
+
+                var panel = this.nextElementSibling;
+                if (panel.style.maxHeight) {
+                    panel.style.maxHeight = null;
+                } else {
+                    let active = document.querySelectorAll(".accordion-div .accordion.active");
+                    for (let j = 0; j < active.length; j++) {
+                        active[j].classList.remove("active");
+                        active[j].nextElementSibling.style.maxHeight = null;
+                    }
+                    this.classList.toggle("active");
+                    panel.style.maxHeight = panel.scrollHeight + "px";
+                }
+            });
+        }
+    </script>
+</body>
+
+</html>

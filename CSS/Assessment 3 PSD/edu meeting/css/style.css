@@ -1,0 +1,1100 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* border: 1px solid; */
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.hea {
+    background-color: #1f272b;
+    position: relative;
+    z-index: 1111;
+}
+
+.ml-l {
+    margin-right: auto;
+}
+
+.ml-l span {
+    color: #fff;
+    padding: 8px 0px;
+    font-size: 13px;
+}
+
+.ml-r {
+    text-align: right;
+    /* padding: 8px 0; */
+}
+
+.nav-bar li {
+    /* padding: 0; */
+    margin: 0;
+    list-style: none;
+    display: inline-block;
+    margin-left: 15px;
+}
+
+.nav-bar {
+    margin-bottom: 0px;
+}
+
+.nav-bar li a {
+    color: #fff;
+    font-size: 14px;
+    margin: 5px 0;
+}
+
+#header {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(31, 39, 43, 0.75), rgba(31, 39, 43, 0.75));
+    /* position: relative; */
+    /* padding: 0 5%; */
+    display: flex;
+
+}
+
+#bg-video {
+    min-width: 100%;
+    min-height: 100vh;
+    max-width: 100%;
+    max-height: 100vh;
+    object-fit: cover;
+    position: relative;
+    z-index: -1;
+}
+
+.left-nav {
+    background-color: rgba(211, 211, 211, 0.489);
+    width: 100%;
+    /* background-size: cover; */
+    position: absolute;
+    z-index: 1;
+}
+
+.nav-r {
+    margin-right: auto !important;
+
+}
+
+.nav-l {
+    margin-left: auto !important;
+}
+
+.hea-bar li {
+    display: inline-block;
+    margin: 31px 0px;
+    padding: 11px 4px;
+}
+
+.hea-bar li a {
+    font-size: 1.0rem;
+    text-decoration: none;
+    color: #fff;
+    font-family: 'Open Sans', sans-serif;
+    text-transform: uppercase;
+}
+
+.pos-abs {
+    position: absolute;
+    z-index: 10;
+}
+
+.wid-100 {
+    width: 100%;
+}
+
+.stu_h3 h3 {
+    font-size: 1.3rem;
+    margin-top: 110px;
+    margin-left: 20px;
+    color: #fff;
+}
+
+.stu_h4 h4 {
+    font-size: 1.3rem;
+    margin: 20px 20px;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.bg-slid {
+    width: 100%;
+    background-image: url(../images/service-item-bg.jpg);
+    padding: 30px 0;
+    background-size: cover;
+    border-radius: 22px;
+}
+
+.stu_p {
+    width: 100%;
+}
+
+.stu_p p {
+    font-size: 1.0rem;
+    color: #fff;
+    margin: 20px 15px;
+    line-height: 28px;
+}
+
+.stu_p span {
+    color: blue;
+}
+
+.img1 {
+    display: block;
+    padding: 20px 0;
+    margin: 0 auto;
+}
+
+.join_us a {
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+    background-color: #a12c2f;
+    display: inline-block;
+    padding: 12px 30px;
+    border-radius: 22px;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin: 10px 85px;
+}
+
+.section1 {
+    background-image: url(../images/meetings-bg.jpg);
+    background-position: center center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 1px 1px;
+    /* padding-top: 1px;
+    padding-bottom: 110px; */
+}
+
+.slide-h3 h3 {
+    text-align: center;
+    color: white;
+    font-size: 1.1rem;
+    margin: 20px 0;
+}
+
+.slide-p p {
+    text-align: center;
+    color: #fff;
+    font-size: 1rem;
+    margin: 20px 0;
+}
+
+.meeting h2 {
+    font-size: 1.8rem;
+    text-align: center;
+    margin: 50px 0;
+    color: white;
+}
+
+hr {
+    color: rgba(255, 255, 255, 0.542);
+    margin: 50px 0;
+}
+
+.card-grid {
+    display: grid;
+    gap: 40px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: minmax(150px, auto);
+    padding: 50px 0;
+}
+
+.card1 {
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 40px;
+    /* margin-right: 45px; */
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.categories h4 {
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: #1f272b;
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #eee;
+}
+
+.category-link li {
+    list-style: none;
+    display: inline-block;
+    margin: 10px 0;
+}
+
+.category-link li a {
+    text-decoration: none;
+    font-size: 1.3rem;
+    color: #1f272b;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.border {
+    border: 1px solid #eee;
+    margin: 10px 0;
+}
+
+.all-events a {
+    width: 100%;
+    font-size: 1.4rem;
+    text-align: center;
+    color: white;
+    padding: 14px;
+    text-transform: uppercase;
+    background-color: #a12c2f;
+    text-decoration: none;
+    border-radius: 32px;
+    display: block;
+    margin: 20px auto;
+}
+
+.card2 {
+    grid-column: 1;
+    grid-row: 2;
+    background-image: url(../images/meeting-01.jpg);
+    background-size: 65vh;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+    margin-left: 30px;
+}
+
+.price {
+    margin: 20px 20px;
+}
+
+.price span {
+    font-size: 1rem;
+    color: #1f272b;
+    font-weight: 600;
+    background-color: rgba(250, 250, 250, 0.9);
+    padding: 7px 12px;
+    border-radius: 10px;
+}
+
+.down-content {
+    background-color: #fff;
+    background-size: cover;
+    margin-top: 110px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.ds-f {
+    display: flex;
+}
+
+.date h6 {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #a12c2f;
+    padding: 5px 20px;
+    margin: 5px 20px;
+}
+
+.date span {
+    font-size: 1rem;
+    font-weight: 50;
+    color: #1f272b;
+    margin: 0 5px;
+    display: block;
+}
+
+.newlecture h4 {
+    font-size: 1.2rem;
+    color: #1f272b;
+    font-weight: 600;
+    display: inline-block;
+    margin: 10px 5px;
+}
+
+.newlecture p {
+    font-size: 1.2rem;
+    margin: 10px 5px;
+    color: #1f272b;
+}
+
+.card3 {
+    grid-column: 1;
+    grid-row: 3;
+    background-image: url(../images/meeting-02.jpg);
+    background-size: 65vh;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+    margin-left: 30px;
+}
+
+.card4 {
+    grid-column: 1;
+    grid-row: 4;
+    background-image: url(../images/meeting-03.jpg);
+    background-size: 65vh;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+    margin-left: 30px;
+}
+
+.card5 {
+    grid-column: 1;
+    grid-row: 5;
+    background-image: url(../images/meeting-04.jpg);
+    background-size: 65vh;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+    margin-left: 30px;
+}
+
+.section2 {
+    background-image: url(../images/apply-bg.jpg);
+    background-position: center center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.sec2_box {
+    background-color: rgba(128, 128, 128, 0.432);
+    padding: 40px;
+    margin: 50px 0;
+}
+
+.sec2_h3 h3 {
+    font-size: 1.5rem;
+    color: white;
+    font-weight: 700;
+    margin: 10px 0;
+}
+
+.sec2_p {
+    width: 90%;
+}
+
+.sec2_p p {
+    font-size: 1.0rem;
+    color: #fff;
+    font-weight: 500;
+    margin: 20px 0;
+}
+
+.join_us2 a {
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+    background-color: #a12c2f;
+    display: inline-block;
+    padding: 12px 30px;
+    border-radius: 22px;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin: 20px 0;
+}
+
+.join_us3 a {
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+    background-color: #f5a425;
+    display: inline-block;
+    padding: 12px 30px;
+    border-radius: 22px;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin: 20px 0;
+}
+
+.pad-accodian {
+    padding: 80px 0;
+}
+
+.accordion {
+    background-color: #fff;
+    color: black;
+    cursor: pointer;
+    padding: 18px;
+    width: 91%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+    margin: 0 20px;
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.active,
+.accordion:hover {
+    /* background-color: #ccc; */
+    color: #f5a425;
+}
+
+.accordion:after {
+    content: '\002B';
+    color: #777;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+}
+
+.active:after {
+    content: "\2212";
+}
+
+.panel {
+    width: 91%;
+    padding: 0 18px;
+    background-color: white;
+    margin: 0 22px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.panel p {
+    font-size: 1.4rem;
+    line-height: 25px;
+    color: #2a2a2a;
+}
+
+.section3 {
+    background-image: url(../images/meetings-bg.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    padding-top: 140px;
+    padding-bottom: 130px;
+}
+
+.sec3_hea h2 {
+    line-height: 40px;
+    margin-top: 0px;
+    margin-bottom: 50px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(250, 250, 250, 0.15);
+    font-size: 22px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.slide-bac {
+    background-color: #fff;
+    background-size: cover;
+    /* padding: 20px 0; */
+}
+
+.slide-img img {
+    width: 100%;
+}
+
+.slide-h4 h4 {
+    font-size: 1.3rem;
+    color: #1f272b;
+    text-align: center;
+    margin: 20px 0;
+    /* border-bottom: 1px solid rgba(250, 250, 250, 0.15); */
+}
+
+.hr {
+    margin: 25px 0;
+}
+
+.rating i {
+    color: #f5a425;
+    cursor: pointer;
+    margin-left: 4px;
+}
+
+.course_price {
+    display: inline-block;
+    margin-left: auto;
+
+}
+
+.course_price h3 {
+    font-size: 1rem;
+    color: #a12c2f;
+}
+
+.section4 {
+    background-image: url(../images/facts-bg.jpg);
+    background-position: center center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 140px 0px 125px 0px;
+}
+
+.sec4_h2 h2 {
+    font-size: 2rem;
+    line-height: 50px;
+    font-weight: 600;
+    color: #fff;
+    letter-spacing: 0.5px;
+    margin-bottom: 30px;
+}
+
+.contact-area {
+    width: 80%;
+    text-align: center;
+    background-color: rgba(250, 250, 250, 0.15);
+    border-radius: 20px;
+    padding: 25px 30px 35px 30px;
+    margin: 15px 0;
+}
+
+
+.sec4pad {
+    padding: 20px 0;
+}
+
+.percent-text h2 {
+    font-size: 1.5rem;
+    color: #f5a425;
+    margin: 10px 0;
+}
+
+.percent-text h5 {
+    font-size: 1.3rem;
+    color: white;
+}
+
+.margsec4 {
+    margin-top: 180px;
+}
+
+.sec4_bac img {
+    width: 80%;
+    border-radius: 22px;
+}
+
+/* .sec4_bac {
+    background-image: url(../images/video-item-bg.jpg);
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-position: center center;
+    /* position: relative; */
+/* } */
+
+/* .sec4_bac img {
+    position: absolute;
+    top: 340px;
+    left: 320px;
+
+} */
+
+footer {
+    background-image: url(../images/meetings-bg.jpg);
+    background-position: center center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 140px 0px 0px 0px;
+}
+
+.contact-form {
+    width: 100%;
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 40px;
+}
+
+.contact_h2 h2 {
+    font-size: 1.4rem;
+    color: #1f272b;
+    text-transform: uppercase;
+    border-bottom: 1px solid #eee;
+    margin-bottom: 40px;
+    padding-bottom: 20px;
+    font-weight: 700;
+}
+
+form .name,
+.email,
+.sub {
+    width: 100%;
+    height: 40px;
+    border-radius: 20px;
+    background-color: #f7f7f7;
+    outline: none;
+    border: none;
+    box-shadow: none;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #7a7a7a;
+    padding: 0 15px;
+    margin-bottom: 30px;
+}
+
+form .message {
+    width: 100%;
+    height: 180px;
+    border-radius: 20px;
+    outline: none;
+    border: none;
+    box-shadow: none;
+    background-color: #f7f7f7;
+    color: #7a7a7a;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 15px;
+    margin-bottom: 30px;
+}
+
+form .send_msg {
+    font-size: 1rem;
+    color: white;
+    background-color: #a12c2f;
+    padding: 12px 30px;
+    display: inline-block;
+    border-radius: 22px;
+    font-weight: 500;
+    text-transform: uppercase;
+    border: none;
+    outline: none;
+}
+
+.js-c {
+    justify-content: space-between;
+}
+
+.contact_info {
+    width: 100%;
+    background-color: #a12c2f;
+    border-radius: 20px;
+    padding: 40px;
+}
+
+.phone,
+.email-ad,
+.address,
+.web h6 {
+    font-size: 1.2rem;
+    color: #fff;
+    font-weight: 500;
+}
+
+.phone-number,
+.email-add,
+.saddress,
+.weburl span {
+    font-size: 1.5rem;
+    color: white;
+    font-weight: 500;
+    display: inline-block;
+    margin: 14px 0;
+    border-bottom: 1px solid #eeeeee69;
+    padding-bottom: 20px;
+}
+
+.footer-border {
+    padding: 50px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.copyright {
+    padding: 50px 0;
+}
+
+.copyright p {
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 1rem;
+    text-align: center;
+}
+
+.copyright span {
+    font-size: 1rem;
+    color: #f5a425;
+}
+
+.container {
+    width: 100%;
+    /* width: 1350px; */
+    margin: 0 auto;
+}
+
+.col-50 {
+    width: 100%;
+}
+
+.col-25 {
+    width: 50%;
+}
+
+.col-30 {
+    width: 100%;
+}
+
+.col-60 {
+    width: 100%;
+}
+
+.nav-l li {
+    display: none;
+}
+
+.bar {
+    display: block;
+    margin-right: auto;
+    margin: 40px 0;
+    padding: 0 20px;
+    background-color: transparent;
+    color: #fff;
+    border: none;
+}
+
+.dips-b-mobile {
+    display: block;
+    position: absolute;
+    background-color: red;
+    left: 0;
+}
+
+.dips-b-mobile .hea-bar li {
+    display: block;
+}
+
+@media (min-width: 576px) {
+    .container {
+        width: 540px;
+    }
+
+    .col-50 {
+        width: 100%;
+    }
+
+    .col-25 {
+        width: 50%;
+    }
+
+    .panel {
+        width: 100%;
+    }
+
+    form .name,
+    .email,
+    .sub {
+        width: 32%;
+    }
+
+    /* .sec4_bac img {
+        position: absolute;
+        top: 156px;
+        left: 250px;
+    } */
+
+    .col-30 {
+        width: 100%;
+    }
+
+    .col-60 {
+        width: 100%;
+    }
+
+    .down-content {
+        margin-top: 106px;
+    }
+
+    .card1 {
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+    .card2 {
+        grid-column: 2;
+        grid-row: 1;
+    }
+
+    .card3 {
+        grid-column: 1;
+        grid-row: 2;
+    }
+    .card4{
+        grid-column: 2;
+        grid-row: 2;
+    }
+    .card5 {
+        grid-column: 1;
+        grid-row: 3;
+    }
+
+    .stu_h3 h3 {
+        font-size: 1.1rem;
+        margin-top: 115px;
+        margin-left: 63px;
+        color: #fff;
+    }
+
+    .stu_h4 h4 {
+        font-size: 1.5rem;
+        margin: 8px 61px;
+        color: #fff;
+        text-transform: uppercase;
+    }
+
+    .stu_p {
+        width: 100%;
+    }
+
+    .stu_p p {
+        font-size: 1.0rem;
+        color: #fff;
+        margin: 20px 64px;
+        line-height: 28px;
+    }
+
+    .slide-bac {
+        background-color: #fff;
+        background-size: cover;
+    }
+}
+
+
+@media (min-width:768px) {
+    .container {
+        width: 720px;
+    }
+
+    .col-50 {
+        width: 100%;
+    }
+
+    .col-25 {
+        width: 50%;
+    }
+
+    .bar {
+        display: none;
+    }
+
+    .col-30 {
+        width: 100%;
+    }
+
+    .col-60 {
+        width: 100%;
+    }
+
+    .hea-bar li {
+        display: inline-block;
+        margin: 31px 0px;
+        padding: 11px 4px;
+    }
+
+    .card3 {
+        grid-column: 1;
+        grid-row: 2;
+    }
+
+    .card4 {
+        grid-column: 2;
+        grid-row: 2;
+    }
+
+    /* .sec4_bac img {
+        position: absolute;
+        top: 155px;
+        left: 348px;
+    } */
+
+    .hea-bar li a {
+        font-size: 1.0rem;
+        text-decoration: none;
+        color: #fff;
+        font-family: 'Open Sans', sans-serif;
+        text-transform: uppercase;
+    }
+}
+
+@media (min-width:992px) {
+    .container {
+        width: 945px;
+    }
+
+    .col-50 {
+        width: 50%;
+    }
+
+    .col-25 {
+        width: 25%;
+    }
+
+    .col-30 {
+        width: 30%;
+    }
+
+    .col-60 {
+        width: 60%;
+    }
+
+    .card3 {
+        grid-column: 3;
+        grid-row: 1;
+    }
+
+    .card4 {
+        grid-column: 1;
+        grid-row: 2;
+    }
+
+    .card5 {
+        grid-column: 2;
+        grid-row: 2;
+    }
+
+    .stu_h3 h3 {
+        font-size: 1.3rem;
+        margin-top: 110px;
+        margin-left: 90px;
+        color: #fff;
+    }
+
+    .stu_h4 h4 {
+        font-size: 2.0rem;
+        margin: 5px 90px;
+        color: #fff;
+        text-transform: uppercase;
+    }
+
+    .stu_p p {
+        font-size: 1.2rem;
+        color: #fff;
+        margin: 8px 90px;
+        line-height: 28px;
+    }
+
+    /* .sec4_bac img {
+        position: absolute;
+        top: 157px;
+        left: 217px;
+
+    } */
+}
+
+@media (min-width:1400px) {
+    .container {
+        width: 1350px;
+    }
+
+    /* .sec4_bac img {
+        position: absolute;
+        top: 359px;
+        left: 310px;
+    } */
+
+
+    .stu_h3 h3 {
+        font-size: 1.3rem;
+        margin-top: 190px;
+        margin-left: 90px;
+        color: #fff;
+    }
+
+    .col-50 {
+        width: 50%;
+    }
+
+    .col-25 {
+        width: 25%;
+    }
+
+    .col-30 {
+        width: 30%;
+    }
+
+    .col-60 {
+        width: 60%;
+    }
+
+    .stu_h4 h4 {
+        font-size: 2.5rem;
+        margin: 20px 90px;
+        color: #fff;
+        text-transform: uppercase;
+    }
+
+    .stu_p {
+        width: 60%;
+    }
+
+    .stu_p p {
+        font-size: 1.2rem;
+        color: #fff;
+        margin: 20px 90px;
+        line-height: 28px;
+    }
+
+    .card1 {
+        background-color: #fff;
+        border-radius: 20px;
+        padding: 40px;
+        /* margin-right: 45px; */
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+    .card2 {
+        grid-column: 2;
+        grid-row: 1;
+        background-image: url(../images/meeting-01.jpg);
+        background-size: 65vh;
+        background-repeat: no-repeat;
+        border-radius: 20px;
+        margin-left: 30px;
+    }
+
+    .card3 {
+        grid-column: 3;
+        grid-row: 1;
+        background-image: url(../images/meeting-02.jpg);
+        background-size: 65vh;
+        background-repeat: no-repeat;
+        border-radius: 20px;
+        margin-left: 30px;
+    }
+
+    .card4 {
+        grid-column: 2;
+        grid-row: 2;
+        background-image: url(../images/meeting-03.jpg);
+        background-size: 65vh;
+        background-repeat: no-repeat;
+        border-radius: 20px;
+        margin-left: 30px;
+    }
+
+    .card5 {
+        grid-column: 3;
+        grid-row: 2;
+        background-image: url(../images/meeting-04.jpg);
+        background-size: 65vh;
+        background-repeat: no-repeat;
+        border-radius: 20px;
+        margin-left: 30px;
+    }
+
+    .down-content {
+        margin-top: 245px;
+    }
+}
