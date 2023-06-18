@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        const person = {
+            name: "dishank",
+            age: 22,
+            hobbies: ["playing", "learning", "listening music"]
+        };
+        //for in loop
+        for (let key in person) {
+            // console.log(person[key])
+            // console.log(`${key} : ${person[key]}`)
+            console.log(key, ":", person[key])
+        }
+        //for of loop
+        const person2 = {
+            name: "siddhu",
+            age: "25",
+            hobbies: ["playing", "learning", "listening music"]
+        };
+        for (let key2 of Object.keys(person2)) {
+            console.log(person2[key2]);
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        const obj1 = {
+            key1: "Value1",
+            key2: "Value2"
+        };
+        const obj2 = {
+            key1: "UniqueValue",
+            key3: "Value3",
+            key4: "Value4"
+        };
+        const newObj = { ...obj1, ...obj2 };
+        console.log(newObj);
+    </script>
+</body>
+
+</html>
