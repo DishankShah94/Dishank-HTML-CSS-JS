@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function findTargetValue(number, target) {
+            let i = 0;
+            while (i < number.length) {
+                i++;
+                if (number[i] === target) {
+                    return i;
+                }
+            }
+            return -1;
+        }
+        const myArray = [1, 2, 4, 6, 19];
+        const ans = findTargetValue(myArray, 4);
+        console.log(ans);
+        //function Expression
+        let i, j;
+        const pattern = function (num) {
+
+            for (i = 0; i <= num; i++) {
+                for (j = 0; j <= i; j++) {
+                    document.write("*")
+                }
+                document.write("<br>")
+            }
+            return num;
+        }
+        document.write(pattern(5))
+        // console.log(showpattern);
+    </script>
+</body>
+
+</html>
