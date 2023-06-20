@@ -74,7 +74,7 @@
     width: 100%;
     /* background-size: cover; */
     position: absolute;
-    z-index: 1;
+    z-index: 11;
 }
 
 .nav-r {
@@ -767,7 +767,7 @@ form .send_msg {
 .dips-b-mobile {
     display: block;
     position: absolute;
-    background-color: red;
+    background-color: #ffe6e6;
     left: 0;
 }
 
@@ -830,10 +830,12 @@ form .send_msg {
         grid-column: 1;
         grid-row: 2;
     }
-    .card4{
+
+    .card4 {
         grid-column: 2;
         grid-row: 2;
     }
+
     .card5 {
         grid-column: 1;
         grid-row: 3;
@@ -968,6 +970,10 @@ form .send_msg {
         margin-top: 110px;
         margin-left: 90px;
         color: #fff;
+    }
+
+    .panel {
+        width: 91%;
     }
 
     .stu_h4 h4 {
