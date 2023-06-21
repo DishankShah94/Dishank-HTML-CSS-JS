@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //callback:- when two functions are created when we pass the one function as a aragument for calling time for second function it is called callback function.
+        function add(a, b) {
+            console.log("the sum of two numbers are:", a + b);
+        }
+        function myfunc(sum) {
+            console.log("this is a function one");
+            sum(1, 5);
+        }
+        myfunc(add);
+    </script>
+</body>
+
+</html>

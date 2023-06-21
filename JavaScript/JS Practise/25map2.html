@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        const arr = [1, 2, 3, 4, 6];
+        const ans = arr.map((number => {
+            let evenorodd = number * number;
+            if (evenorodd % 2 === 0) {
+                console.log(`${evenorodd} is even number`);
+            }
+            else {
+                console.log(`${evenorodd} is odd number`);
+            }
+        }));
+        console.log(ans);
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        const userCart = [{ productId: 1, productName: "Tv", price: 30000 },
+        { productId: 3, productName: "laptop", price: 22000 },
+        { productId: 2, productName: "Mobile", price: 15000 },
+        ];
+        const totalAmount = userCart.reduce((totalPrice, currentValue) => {
+            return totalPrice + currentValue.price;
+        }, 0);
+        console.log(totalAmount);
+
+    </script>
+</body>
+
+</html>
