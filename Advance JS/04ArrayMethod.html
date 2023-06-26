@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Method</title>
+</head>
+
+<body>
+    <script>
+        let arr = [1, 2, 3, 4, 5, 6, 7];
+        console.log("Before use an array method", arr);
+        //toString - to string method is used to convert an array to string.
+        let tstring = arr.toString();
+        console.log("toString:-", tstring);
+        console.log(typeof tstring);
+        // pop - this method is used to remove the last index array element.
+        let expop = arr.pop();
+        console.log("Pop last index", expop, "and the new array is:", arr);
+        //push - this method is used to add element into last index.
+        let expush = arr.push(45);
+        console.log("Push to last index", expush, "After push the new array is:", arr);
+        //unshift - this method is used to add item to starting of the index.
+        let exunshift = arr.unshift("dishank");
+        console.log("Unshift an array-", exunshift, "After unshift the new array is", arr);
+        //shift - this method is used to remove the first index item
+        let exshift = arr.shift();
+        console.log("Shift an array-", exshift, "After shift the new array is", arr);
+        // Join - this method is returns an array as a string. The join method does not change the original value.
+        let exjoin = arr.join("#");
+        console.log("Join-", exjoin, arr);
+        //splice - this method changes the contents of an array by removing and replacing existing element.
+        //splice means total destructring of an array here the syntax is start index, how many element you want to change then 
+        //new element name
+        let arr2 = [10, 11, 14, 15, 16];
+        let exsplice = arr2.splice(2, 2, 12, 13);
+        console.log(exsplice, arr2);
+        //slice - this method is used when we want to get the some element from one array to another array then we use slice.
+        let arr3 = ["dishank", "siddhu", "rajesh", "dakshesh", "harshad"];
+        // the syntax for slice - start index then how many index you want to differenciate and create a new array.
+        let exslice = arr3.slice(1, 3);
+        console.log(exslice, arr3);
+        // sort - sort method is used to asecending and desecending value based on ASCII Value.
+        let arr4 = [25, 45, 56, 1211, 1112];
+        let exsort = arr4.sort();
+        console.log(exsort, arr4);
+        //reverse = reverse an array based on ASCII Value.
+        let exreverse = arr.reverse();
+        console.log(exreverse);
+        //concat = when we want to add an different array from one array
+        let exconcat = arr.concat(arr2, arr3, arr4);
+        console.log(exconcat);
+    </script>
+</body>
+
+</html>
