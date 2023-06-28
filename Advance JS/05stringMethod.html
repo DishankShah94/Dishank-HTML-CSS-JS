@@ -9,17 +9,26 @@
 
 <body>
     <script>
-        let name = "Hello My name is dishank";
-        let txt = "How are you";
-        console.log(name);
+        let txt = "My Name is Dishank";
         console.log(txt);
-        console.log(name[0]);
-        console.log(name[1]);
-        console.log(name[2]);
-        console.log(name[3]);
-        console.log(name[4]);
-        console.log(name[5]);
-        console.log(name[6]);
+        console.log(txt.toUpperCase());
+        console.log(txt.toLowerCase());
+        console.log(txt[0]);
+        console.log(txt[1]);
+        console.log(txt[2]);
+        console.log(txt[3]);
+        console.log(txt[4]);
+        console.log(txt[5]);
+        console.log(txt[6]);
+        console.log(txt.slice(0, 7));
+        let txt2 = "   Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet    ";
+        console.log(txt2.replace("Lorem", "Dishank"));
+        console.log(txt2.replaceAll("Lorem", "dishu"));
+        console.log(txt2.trim());
+        console.log(txt2.trimStart());
+        console.log(txt2.trimEnd());
+        let txt3 = " How are you??";
+        console.log(txt.concat(txt3));
     </script>
 </body>
 
