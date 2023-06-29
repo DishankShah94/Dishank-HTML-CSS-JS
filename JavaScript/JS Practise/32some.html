@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>some</title>
+</head>
+
+<body>
+    <script>
+        const products = [{ productId: 1, productName: "Tv", price: 30000 },
+        { productId: 3, productName: "laptop", price: 22000 },
+        { productId: 2, productName: "Mobile", price: 15000 },
+        { productId: 4, productName: "Macbook", price: 150000 },
+        { productId: 5, productName: "AC", price: 150000 }
+        ];
+        const ans = products.some((userCart) => userCart.price > 100000);
+        console.log(ans);
+    </script>
+</body>
+
+</html>
