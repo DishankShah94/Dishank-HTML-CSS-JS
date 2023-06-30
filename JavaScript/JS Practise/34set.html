@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Set</title>
+</head>
+
+<body>
+    <script>
+        //it is iterable
+        //no index based access
+        //no order guranteed
+        //unique items only
+        //duplicates are not allowed
+        const items = ['item1', 'item2'];
+        const number = new Set();
+        number.add(1);
+        number.add(2);
+        number.add(3);
+        number.add(4);
+        number.add(5);
+        number.add(6);
+        number.add(items);
+        console.log(number);
+        if (number.has(1)) {
+            console.log("1 is present");
+        }
+        else {
+            console.log("1 is not present");
+        }
+        for (let no of number) {
+            console.log(no);
+        }
+        const myArray = [1, 2, 3, 3, 5, 4, 5, 4, 6, 6];
+        const unique = new Set(myArray);
+        console.log(unique, "myArray ", myArray);
+        let len = 0;
+        for (let element of unique) {
+            len++;
+        }
+        console.log("Unique elements are-", len);
+    </script>
+</body>
+
+</html>
