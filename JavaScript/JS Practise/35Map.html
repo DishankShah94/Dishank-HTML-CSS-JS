@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //Map holds key-value pairs where the keys can be any datatye.
+        //order is guranteed
+        //Store data in orer fashion
+        //duplicate keys are not allowed like objects
+
+        // different between maps and objects
+        // objects can only have string or symbol 
+        //as key
+        // in maps you can use anything or symbol
+        // like array,number or string
+
+        const person = {
+            firstName: "harshit",
+            age: 7,
+            1: "one"
+        }
+        console.log(person.firstName);
+
+        console.log(person["firstName"]);
+        // for (let key in person) {
+        //     console.log(typeof key);
+        // }
+        const person1 = new Map();
+        person1.set('firstName', 'Dishu');
+        person1.set('lastName', 'Shah');
+        person1.set('gender', 'male');
+        person1.set(1, 'one');
+
+        console.log(person1);
+        for (let key1 of person1.keys()) {
+            console.log(typeof key1);
+        }
+    </script>
+</body>
+
+</html>
