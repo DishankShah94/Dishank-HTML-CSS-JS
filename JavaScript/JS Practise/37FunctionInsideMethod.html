@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //Function Indide Method
+        function personInfo() {
+            console.log(`Person name is ${this.firstName} and age is ${this.age}`);
+        }
+        const person1 = {
+            firstName: "dishu",
+            age: 18,
+            about: personInfo
+        }
+        const person2 = {
+            firstName: "sishu",
+            age: 9,
+            about: personInfo
+        }
+        const person3 = {
+            firstName: "vishu",
+            age: 8,
+            about: personInfo
+        }
+        person1.about();
+        person2.about();
+        person3.about();
+
+    </script>
+</body>
+
+</html>

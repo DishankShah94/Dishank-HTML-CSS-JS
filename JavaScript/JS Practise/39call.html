@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Call, Apply and Bind</title>
+</head>
+
+<body>
+    <script>
+        function about(hobby, favMusician) {
+            console.log(this.firstName, this.age, hobby, favMusician);
+        }
+        const user1 = {
+            firstName: "Shailendra",
+            age: 16,
+        }
+        const user2 = {
+            firstName: "Hitesh",
+            age: 19,
+        }
+        const user3 = {
+            firstName: "Rohan",
+            age: 9,
+        }
+        //call
+        about.call(user2, "music", "Anjali Dev");
+        //apply
+        about.apply(user1, ["piano", "Sankar"])
+        //bind returns the function
+        const func = about.bind(user3, "Gitar", "bach");
+        func();
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // both print window object
+        // console.log(this);
+        // console.log(window);
+        // when write "use strict" inside function then this does not written the window function it returns the undefined 
+        // without using "use strict" it returns the window function
+        function myFunc() {
+            "use strict"
+            console.log(this);
+        }
+        myFunc();
+
+    </script>
+</body>
+
+</html>
