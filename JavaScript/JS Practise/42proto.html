@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // __proto__ or [[Prototype]]
+        // it means when we want to access key that is not access in object1 but in object2 it was there then JavaScript check
+        // the object2 and print the key value 
+        let obj1 = {
+            key1: "Value1",
+            key2: "Value2"
+        }
+        const obj2 = Object.create(obj1);
+        // there is one way to create empty object
+        obj2.key3 = "Value3";
+        console.log(obj2)
+        console.log(obj2.key1);
+        console.log(obj2.__proto__);
+    </script>
+</body>
+
+</html>
