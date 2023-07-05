@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="background_box">
+        <form action="">
+            <input type="text" name="" class="todo" placeholder="add new" id="todo">
+            <button type="button" class="submit" id="submit">Add</button>
+            <ul id="myList">
+            </ul>
+        </form>
+    </div>
+    <script>
+        document.getElementById("submit").addEventListener("click", function () {
+            const node = document.createElement("li");
+            var x = document.getElementById("todo").value;
+            if (x == "") {
+                alert("Please Enter Something");
+                document.getElementById("todo").focus();
+            }
+            else {
+                const textnode = document.createTextNode(x);
+                node.appendChild(textnode);
+                document.getElementById("myList").appendChild(node);
+                document.getElementById("todo").value = '';
+                document.getElementById("todo").focus();
+            }
+        });
+
+
+    </script>
+</body>
+
+</html>
