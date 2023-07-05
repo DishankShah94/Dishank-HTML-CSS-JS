@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Closures Example 3</title>
+</head>
+
+<body>
+    <script>
+        function myFunction(power) {
+            return function (number) {
+                return number ** power;
+            }
+        }
+        const square = myFunction(2);
+        const ans = square(3);
+        console.log(ans);
+        const cube = myFunction(3);
+        const ans2 = cube(3);
+        console.log(ans2);
+    </script>
+</body>
+
+</html>
