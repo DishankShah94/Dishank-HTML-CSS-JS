@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1 class="heading1">Heading 1</h1>
+    <h1 class="heading2">Heading 2</h1>
+    <h1 class="heading3">Heading 3</h1>
+    <h1 class="heading4">Heading 4</h1>
+    <h1 class="heading5">Heading 5</h1>
+    <h1 class="heading6">Heading 6</h1>
+    <h1 class="heading7">Heading 7</h1>
+    <script>
+        const heading1 = document.querySelector(".heading1");
+        const heading2 = document.querySelector(".heading2");
+        const heading3 = document.querySelector(".heading3");
+        const heading4 = document.querySelector(".heading4");
+        const heading5 = document.querySelector(".heading5");
+        const heading6 = document.querySelector(".heading6");
+        const heading7 = document.querySelector(".heading7");
+        // setTimeout(() => {
+        //     heading1.textContent = "one";
+        //     heading1.style.color = "violet";
+        //     setTimeout(() => {
+        //         heading2.textContent = "two";
+        //         heading2.style.color = "purple";
+        //         setTimeout(() => {
+        //             heading3.textContent = "three";
+        //             heading3.style.color = "red";
+        //             setTimeout(() => {
+        //                 heading4.textContent = "four";
+        //                 heading4.style.color = "pink";
+        //                 setTimeout(() => {
+        //                     heading5.textContent = "five";
+        //                     heading5.style.color = "green";
+        //                     setTimeout(() => {
+        //                         heading6.textContent = "six";
+        //                         heading6.style.color = "blue";
+        //                         setTimeout(() => {
+        //                             heading7.textContent = "seven";
+        //                             heading7.style.color = "brown"; 
+        //                         }, 1000);
+        //                     }, 3000);
+        //                 }, 2000);
+        //             }, 1000);
+        //         }, 2000);
+        //     }, 2000);
+        // }, 1000);
+        function changeText(element, text, color, time, onSuccessCallback, onFailureCallback) {
+            setTimeout(() => {
+                if (element) {
+                    element.textContent = text;
+                    element.style.color = color;
+                    if (onSuccessCallback) {
+                        onSuccessCallback();
+                    }
+                    else {
+                        if (onFailureCallback) {
+                            onFailureCallback();
+                        }
+                    }
+                }
+            }, time);
+        }
+        changeText(heading1, "one", "violet", 1000, () => {
+            changeText(heading2, "two", "purple", 2000, () => {
+                changeText(heading3, "three", "red", 1000, () => {
+                    changeText(heading4, "four", "pink", 1000, () => {
+                        changeText(heading5, "five", "green", 2000, () => {
+                            changeText(heading6, "six", "blue", 1000, () => {
+                                changeText(heading7, "seven", "brown", 1000, () => {
+                                }, () => { console.log("Heading7 does not exist") })
+                            }, () => { console.log("Heading6 does not exist") })
+                        }, () => { console.log("Heading5 does not exist") })
+                    }, () => { console.log("Heading4 does not exist") })
+                }, () => { console.log("Heading3 does not exist") })
+            }, () => { console.log("Heading2 does not exist") })
+        }, () => { console.log("Heading1 does not exist") })
+    </script>
+</body>
+
+</html>
