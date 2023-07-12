@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1 class="heading1">Heading 1</h1>
+    <h1 class="heading2">Heading 2</h1>
+    <h1 class="heading3">Heading 3</h1>
+    <h1 class="heading4">Heading 4</h1>
+    <h1 class="heading5">Heading 5</h1>
+    <h1 class="heading6">Heading 6</h1>
+    <h1 class="heading7">Heading 7</h1>
+    <script>
+        const heading1 = document.querySelector(".heading1");
+        const heading2 = document.querySelector(".heading2");
+        const heading3 = document.querySelector(".heading3");
+        const heading4 = document.querySelector(".heading4");
+        const heading5 = document.querySelector(".heading5");
+        const heading6 = document.querySelector(".heading6");
+        const heading7 = document.querySelector(".heading7");
+        const heading8 = document.querySelector(".heading");
+        function changeText(element, text, color, time) {
+            return new Promise((resolve, reject) => {
+                setTimeout(() => {
+                    if (element) {
+                        element.textContent = text;
+                        element.style.color = color;
+                        resolve();
+                    }
+                    else {
+                        reject("Element does not exist");
+                    }
+                }, time);
+            })
+        }
+        changeText(heading1, "one", "violet", 1000)
+            .then(() => changeText(heading2, "two", "purple", 1000))
+            .then(() => changeText(heading3, "three", "red", 1000))
+            .then(() => changeText(heading4, "four", "pink", 1000))
+            .then(() => changeText(heading5, "five", "green", 1000))
+            .then(() => changeText(heading6, "six", "blue", 1000))
+            .then(() => changeText(heading7, "seven", "brown", 1000))
+            .then(() => changeText(heading8, "eight", "black", 1000))
+            .catch((error) => alert(error))
+    </script>
+</body>
+
+</html>
