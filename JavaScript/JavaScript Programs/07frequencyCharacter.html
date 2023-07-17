@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        const str = prompt("Enter string");
+        const letters = {};
+        for (let char of str.toLowerCase()) {
+            letters[char] = letters[char] + 1 || 1;
+        }
+        console.log(letters);
+    </script>
+</body>
+
+</html>
