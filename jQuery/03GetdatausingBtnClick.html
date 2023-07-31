@@ -16,21 +16,23 @@
     </p>
     <button id="btn">
         click
-    </button>
+    </button><br>
     <span id="fetchData"></span>
     <script src="https://code.jquery.com/jquery-3.6.4.js"
         integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E=" crossorigin="anonymous"></script>
     <script>
 
-        var content = ["CSS Data"];
         $("#btn").click(function () {
             console.log("called")
             data = $(this).css([
                 "width", "height", "color", "background-color"
-
+        
             ]);
-            console.log(data)
-            $("#fetchData").html(content.join("<br>"));
+            // console.log(data);
+            $("#fetchData").html($.map(data, function (item) {
+                return item;
+            }).join('<br />'));
+            // $("#fetchData").html(data["height"]);
         })
     </script>
 </body>
