@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CountDown App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="main">
+        <div class="overlay">
+            <div class="title">We are coming soon</div>
+            <div class="title" id="end-date">1 August 2023 4:00 PM</div>
+            <div class="col">
+                <div>
+                    <input type="text" name="" id="" readonly value="0"><br>
+                    <label for="">Days</label>
+                </div>
+
+                <div>
+                    <input type="text" name="" id="" readonly value="0"><br>
+                    <label for="">Hours</label>
+                </div>
+
+                <div>
+                    <input type="text" name="" id="" readonly value="0"><br>
+                    <label for="">Minutes</label>
+                </div>
+                <div>
+                    <input type="text" name="" id="" readonly value="0"><br>
+                    <label for="">Seconds</label>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        var enddate = "3 August 2023 4:00 PM";
+        document.getElementById("end-date").innerText = enddate;
+        const inputs = document.querySelectorAll("input");
+
+        const clock = (end, now) => {
+            end = new Date(enddate);
+            now = new Date();
+            const diff = (end - now) / 1000; //seconds convert
+            if (diff < 0) return; // It does not print Minus value
+            // Day convert
+            inputs[0].value = Math.floor(diff / 3600 / 24);
+            //Convert into hours/reminder
+            inputs[1].value = Math.floor(diff / 3600) % 24;
+            //Convert Minutes
+            inputs[2].value = Math.floor(diff / 60) % 60;
+            //Convert Seconds
+            inputs[3].value = Math.floor(diff) % 60;
+        }
+        clock();
+        setInterval(() => {
+            clock();
+        }, 1000);
+        /*
+            1 day= 24 hours
+            1 hour = 60 mins
+            60 mins = 3600 sec
+        */
+    </script>
+</body>
+
+</html>
