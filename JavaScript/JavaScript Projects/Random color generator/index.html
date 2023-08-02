@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="back" id="back">
+        <div class="box">
+            <h2 class="h2" id="color">#fff</h2>
+            <button type="submit" class="btn" id="btn" onclick="genrateColor()">Random Color Generator</button>
+        </div>
+    </div>
+    <script>
+        function genrateColor(){
+            const randomNumber = Math.floor(Math.random() * 16777215);
+            //convert hash value
+            const randomCode = "#" + randomNumber.toString(16);
+            document.getElementById("back").style.backgroundColor= randomCode;    
+            document.getElementById("color").innerText = randomCode;
+    
+        }
+        genrateColor();
+    </script>
+</body>
+</html>
