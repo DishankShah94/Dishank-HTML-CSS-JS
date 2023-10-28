@@ -1,0 +1,4 @@
+https://www.youtube.com/watch?v=wZHtZ_VJGKI
+DSA : IT IS A WAY TO organize the way to represent the data.
+Algorithm : Steps to reach out the particular output.
+Traversal : Just reach out the array 

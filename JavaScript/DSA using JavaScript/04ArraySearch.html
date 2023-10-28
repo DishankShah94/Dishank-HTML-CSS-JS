@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let data = [10, 20, 30, 40, 50, 60, 50, 70, 50];
+        let search1 = 50
+        let index = undefined;
+        for (let i = 0; i <= data.length; i++) {
+            if (data[i] == search1) {
+                index = i;
+                console.log(`Your ${search1} element is in index position of ${index}`);
+                // break;
+            }
+        }
+
+        function search() {
+            let data = [10, 20, 30, 40, 50, 60];
+            let search = document.getElementById("element").value;
+            let index = undefined;
+            search = parseInt(search);
+            for (let i = 0; i <= data.length; i++) {
+                if (data[i] == search) {
+                    index = i;
+                    console.log(`Your ${search} element is in index position of ${index}`);
+                    break;
+                }
+            }
+            console.log(index);
+        }
+    </script>
+    <input type="text" name="" id="element" placeholder="Enter Element for search">
+    <button onclick="search()">Search Element</button>
+</body>
+
+</html>
