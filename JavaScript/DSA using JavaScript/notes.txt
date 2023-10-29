@@ -2,3 +2,6 @@ https://www.youtube.com/watch?v=wZHtZ_VJGKI
 DSA : IT IS A WAY TO organize the way to represent the data.
 Algorithm : Steps to reach out the particular output.
 Traversal : Just reach out the array 
+
+Time complexity : no of line executed is called time complexity.
+Space complexity : no f variable is declared memory is consume is called space complexity.
