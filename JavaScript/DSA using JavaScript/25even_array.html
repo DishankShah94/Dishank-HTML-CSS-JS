@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let data = [10, 11, 13, 14, 43, 22, 45, 44];
+        let count = 0;
+        let evenArray = [];
+        for (let i = 0; i < data.length; i++) {
+            if (data[i] % 2 == 0) {
+                evenArray.push(data[i] * 2);
+                count++;
+            }
+        }
+        console.log(evenArray);
+        console.log(count);
+    </script>
+</body>
+
+</html>
