@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let data = new Map([
+            ['name', 'Dishank'],
+            [true, 'bool key'],
+            [100, 'hundred']
+        ]);
+        data.set('color', 'red');
+        console.log(data.size);
+        console.log(data.get('color'));
+        data.delete('color');
+        console.log(data.has('color'));
+        for (let item of data) {
+            console.log(`${item[0]}: ${item[1]}`);
+        }
+        data.clear();
+        for (let item1 of data) {
+            if (data.clear == 0) {
+                console.log("Map is empty");
+            }
+            else {
+                console.log("Map still has item");
+            }
+        }
+        console.log(data);
+    </script>
+</body>
+
+</html>
